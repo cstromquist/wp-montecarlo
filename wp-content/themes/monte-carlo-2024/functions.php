@@ -113,4 +113,11 @@ require_once( 'functions/func-admin.php' );
 
 require_once( 'functions/func-debug.php' );
 
+/***************************************************************
+  *
+  GUTENBERG
+  *
+  * *******************************************************/
+require_once( 'functions/func-gutenberg.php' );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
