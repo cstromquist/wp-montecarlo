@@ -1,0 +1,641 @@
+{
+    "key": "group_6498e84806d2f",
+    "title": "Blog page",
+    "fields": [
+        {
+            "key": "field_649ba28df28cb",
+            "label": "Page hero",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_6498e849928b9",
+            "label": "Page title",
+            "name": "blog_page_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6498eac9928ba",
+            "label": "Page text",
+            "name": "",
+            "aria-label": "",
+            "type": "acfe_post_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "field_type": "content"
+        },
+        {
+            "key": "field_649ba31e89afa",
+            "label": "Featured posts",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_65f1e9d8b68f8",
+            "label": "Featured posts (copy)",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_649ba32b89afb",
+            "label": "Featured posts",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "These posts will be automatically populated by the 3 most recent blog posts that have the Is Featured option selected. Example shown below...\r\n\r\n<img id=\"isFeaturedSS\" src=\"\/wp-content\/themes\/monte-carlo-2023\/assets\/img\/is-featured.png\" \/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_649ba29df28cc",
+            "label": "Editors picks",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_649963968c6bd",
+            "label": "Editors picks",
+            "name": "blog_editors_picks",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "post_type": [
+                "post"
+            ],
+            "post_status": "",
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "return_format": "object",
+            "acfe_add_post": 0,
+            "acfe_edit_post": 0,
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "min": "",
+            "max": 3,
+            "elements": [
+                "featured_image"
+            ],
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_649ba2b1f28cd",
+            "label": "CTA cards",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_649aa332f6c88",
+            "label": "CTA cards",
+            "name": "cta_cards_repeater",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "cta-card-repeater",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "acfe_repeater_stylised_button": 1,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Card",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_649aa389f6c8d",
+                    "label": "(Column 6\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "columns": "6\/12",
+                    "endpoint": 0,
+                    "border": [
+                        "column",
+                        "fields"
+                    ],
+                    "border_endpoint": [
+                        "endpoint"
+                    ],
+                    "parent_repeater": "field_649aa332f6c88"
+                },
+                {
+                    "key": "field_649aa389f6c8e",
+                    "label": "Append CTA to",
+                    "name": "append_cta_to",
+                    "aria-label": "",
+                    "type": "taxonomy",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "taxonomy": "category",
+                    "add_term": 0,
+                    "save_terms": 0,
+                    "load_terms": 0,
+                    "return_format": "id",
+                    "field_type": "select",
+                    "max": "",
+                    "allow_null": 0,
+                    "acfe_bidirectional": {
+                        "acfe_bidirectional_enabled": "0"
+                    },
+                    "multiple": 0,
+                    "min": "",
+                    "bidirectional_target": [],
+                    "parent_repeater": "field_649aa332f6c88"
+                },
+                {
+                    "key": "field_649aa389f6c8f",
+                    "label": "(Column 6\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "columns": "6\/12",
+                    "endpoint": 0,
+                    "border": [
+                        "column",
+                        "fields"
+                    ],
+                    "border_endpoint": [
+                        "endpoint"
+                    ],
+                    "parent_repeater": "field_649aa332f6c88"
+                },
+                {
+                    "key": "field_649aa389f6c90",
+                    "label": "Position to add the CTA",
+                    "name": "position_to_add_the_cta",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "Where in the row to add the CTA, Card 1, 2, or 3",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "choices": {
+                        "1": "1",
+                        "2": "2",
+                        "3": "3"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal",
+                    "parent_repeater": "field_649aa332f6c88"
+                },
+                {
+                    "key": "field_649aa389f6c91",
+                    "label": "(Column Endpoint)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "endpoint": 1,
+                    "border_endpoint": [
+                        "endpoint"
+                    ],
+                    "columns": "6\/12",
+                    "border": "",
+                    "parent_repeater": "field_649aa332f6c88"
+                },
+                {
+                    "key": "field_649aa389f6c92",
+                    "label": "CTA title",
+                    "name": "cta_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_649aa332f6c88"
+                },
+                {
+                    "key": "field_649aa389f6c93",
+                    "label": "CTA text",
+                    "name": "cta_text",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "default_value": "",
+                    "acfe_textarea_code": 0,
+                    "maxlength": "",
+                    "rows": 3,
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_649aa332f6c88"
+                },
+                {
+                    "key": "field_649aa389f6c94",
+                    "label": "CTA link",
+                    "name": "cta_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "return_format": "array",
+                    "parent_repeater": "field_649aa332f6c88"
+                }
+            ]
+        },
+        {
+            "key": "field_649ba2c2f28ce",
+            "label": "CTA Banner",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_64996603c4a79",
+            "label": "CTA banner",
+            "name": "blog_cta_banner",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "clone": [
+                "group_64939f6d3a3ed"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "acfe_seamless_style": 0,
+            "acfe_clone_modal": 0,
+            "acfe_clone_modal_close": 0,
+            "acfe_clone_modal_button": "",
+            "acfe_clone_modal_size": "large"
+        },
+        {
+            "key": "field_649bfe8cc6787",
+            "label": "Video resources",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_649bfea9c6788",
+            "label": "Section title",
+            "name": "blog_video_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "default_value": "Video resources",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64a7e2d20c5dd",
+            "label": "Choose how to populate the Video posts",
+            "name": "blog_video_type",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "Choose between populating this section with the 3 most recent posts from the Video category or manually choose which 3 posts you would like featured here.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "choices": {
+                "recent": "Most recent",
+                "curated": "Curated list"
+            },
+            "default_value": "recent",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        },
+        {
+            "key": "field_64a7e3ab0c5de",
+            "label": "Curated Video posts",
+            "name": "blog_curated_video_posts",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_64a7e2d20c5dd",
+                        "operator": "==",
+                        "value": "curated"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "post_type": [
+                "post"
+            ],
+            "post_status": "",
+            "taxonomy": [
+                "category:video"
+            ],
+            "filters": [
+                "search"
+            ],
+            "return_format": "object",
+            "acfe_add_post": 0,
+            "acfe_edit_post": 0,
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "min": "",
+            "max": "",
+            "elements": "",
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_649ba2d1f28cf",
+            "label": "Related resources",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "placement": "left",
+            "endpoint": 0,
+            "no_preference": 0
+        },
+        {
+            "key": "field_649ba2e0f28d0",
+            "label": "Related resources",
+            "name": "blog_related_resources",
+            "aria-label": "",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "clone": [
+                "group_649429218fdb1"
+            ],
+            "display": "seamless",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 1,
+            "acfe_seamless_style": 0,
+            "acfe_clone_modal": 0,
+            "acfe_clone_modal_close": 0,
+            "acfe_clone_modal_button": "",
+            "acfe_clone_modal_size": "large"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "174"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_display_title": "",
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1710352908,
+    "acfe_categories": {
+        "page-fields": "Page"
+    }
+}

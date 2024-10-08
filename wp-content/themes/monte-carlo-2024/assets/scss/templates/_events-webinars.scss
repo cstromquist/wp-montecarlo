@@ -1,0 +1,353 @@
+.no-featured {
+  height: $m104;
+}
+
+.featured-event-card {
+  padding-top: $m112;
+  padding-bottom: $m136;
+
+  .description {
+    margin-top: $m24;
+  }
+
+  .meta {
+    margin: $m32 0 $m40;
+    list-style: none;
+    padding: 0;
+
+    @media only screen and (min-width: $sm-start) {
+      display: flex;
+      align-items: center;
+      column-gap: 8%;
+      flex-wrap: wrap;
+      row-gap: 24px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      margin: 0 0 10px;
+
+      @media only screen and (min-width: $sm-start) {
+        margin: 0;
+      }
+
+      >span {
+        flex-shrink: 0;
+        display: inline-block;
+        background-position: center;
+        background-size: 100% auto;
+      }
+
+      &.meta-date {
+        >span {
+          width: 17px;
+          height: 15px;
+          background-image: url("../img/date-icn.svg");
+        }
+      }
+
+      &.meta-city {
+        >span {
+          width: 16px;
+          height: 19px;
+          background-image: url("../img/city-icn.svg");
+        }
+      }
+
+      &.meta-location {
+        >span {
+          width: 26px;
+          height: 14px;
+          background-image: url("../img/location-icn.svg");
+        }
+      }
+
+    }
+
+  }
+
+  .image {
+    margin-bottom: $m48;
+
+    @media only screen and (min-width: $md-start) {
+      margin-bottom: 0;
+    }
+
+  }
+
+}
+
+.shadow-card {
+  width: 100%;
+  margin-bottom: 60px;
+  box-shadow: 10px 10px 20px 0px rgba(0, 33, 53, 0.15);
+  position: relative;
+  
+    @media only screen and (min-width: $sm-start) {
+      width: calc(50% - 28px);
+    }
+    
+    
+    @media only screen and (min-width: $md-start) {
+      width: calc(33.3333333% - 28px);
+    }
+    
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    
+    .image {
+      overflow: hidden;
+      
+        img {
+          transition: all $trans2 ease;
+          transform-origin: center;
+        }
+      
+    }
+    
+    .content {
+      padding: $m24 $m32 $m32;
+    }
+    
+    p.description {
+      margin-top: $m16;
+    }
+  
+    .meta {
+      margin: $m24 0;
+      list-style: none;
+      padding: 0;
+        
+        li {
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          
+            p {
+              font-size: $b4;
+            }
+            
+            >span {
+              flex-shrink: 0;
+              display: inline-block;
+              background-position: center;
+              background-size: 100% auto;
+            }
+
+            &.meta-date {
+              >span {
+                width: 10px;
+                height: 10px;
+                background-image: url("../img/date-icn.svg");
+              }
+            }
+
+            &.meta-city {
+              >span {
+                width: 10px;
+                height: 12px;
+                background-image: url("../img/city-icn.svg");
+              }
+            }
+
+            &.meta-location {
+              >span {
+                width: 11px;
+                height: 6px;
+                background-image: url("../img/location-icn.svg");
+              }
+            }
+          
+        }
+        
+      
+    }
+    
+    a {
+      
+        &::after {
+          content: " ";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+          z-index: 2;
+        }
+        
+    }
+    
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+
+        img {
+          transform: scale(1.05);
+        }
+        
+        .faux-a {
+          color: #fff;
+          text-decoration: none;
+
+          &::before {
+            background: $button-primary-hover;
+            transform: translate(-50%, -50%) skewX(0deg);
+          }
+        }
+
+      }
+    }
+  
+}
+
+.post-type-archive-events {
+  
+    .events-filter {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      column-gap: 18px;
+      margin-bottom: 80px;
+      
+        @media only screen and (min-width: $md-start) {
+          display: flex;
+        }
+      
+        .ui-group {
+          position: relative;
+          display: inline-flex;
+          justify-content: flex-start;
+          min-width: 248px;
+          height: 50px;
+          border: 1px solid $ocean;
+          border-radius: 3px;
+          background: #fff;
+          cursor: pointer;
+          
+            &::after {
+              content: " ";
+              display: block;
+              position: absolute;
+              right: 16px;
+              top: 52%;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 10px 6px 0 6px;
+              border-color: $fishTint1 transparent transparent transparent;
+              transform: translateY(-50%);
+            }
+        }
+      
+        select {
+          min-width: 248px;
+          padding: 10px 40px 10px 20px;
+          margin: 0;
+          cursor: pointer;
+          outline: none;
+          appearance: none;
+          background-color: transparent;
+          border: none;
+          color: $text-main;
+          z-index: 1;
+          font-size: $b2;
+          line-height: 1.2;
+          font-family: $bodyFont;
+          font-weight: 400;
+        }
+      
+    }
+    
+    .events-container {
+      padding-bottom: $m144;
+    }
+    
+    .events-grid {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+}
+
+.post-type-archive-webinars {
+  
+  .webinar-posts {
+    padding-bottom: $m80;
+  }
+
+  .webinars-container {
+    padding-bottom: $m144;
+    
+      @media only screen and (min-width: $md-start) {
+        display: flex;
+        column-gap: 41px;
+      }
+    
+  }
+  
+  .webinars-filter {
+    display: none;
+    
+      button {
+        font-family: $bodyFont;
+        font-size: $b3;
+        color: $text-main;
+        text-align: left;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        
+          &.is-checked {
+            color: $fishTint1;
+          }
+        
+      }
+    
+      @media only screen and (min-width: $md-start) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 0 0 20%;
+      }
+      
+      @media only screen and (min-width: $lg-start) {
+        flex: 0 0 190px;
+      }
+    
+  }
+  
+  .webinars {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    
+      .shadow-card {
+        
+        @media only screen and (min-width: $md-start) {
+          width: calc(50% - 14px);
+        }
+      
+      
+        @media only screen and (min-width: $lg-start) {
+          width: calc(33.3333333% - 20px);
+        }
+        
+        .meta li p {
+          font-size: $b5;
+        }
+        
+      }
+    
+  }
+  
+}

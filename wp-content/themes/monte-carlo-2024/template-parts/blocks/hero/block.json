@@ -1,0 +1,40 @@
+{
+    "name": "hasa-casa/hero",
+    "title": "Hero",
+    "description": "Hero block for pages",
+    "category": "hasa-casa",
+    "icon": "align-full-width",
+    "style": "file:../../../dist/css/blocks/hero.css",
+    "apiVersion": 2,
+    "keywords": [
+        "hero",
+        "header"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "hero.php",
+        "postTypes": [ 
+            "page",
+            "product",
+            "use-cases",
+            "verticals"
+         ]
+    },
+    "supports": {
+        "align": false,
+        "anchor": false,
+        "alignContent": false,
+        "alignText": false,
+        "fullHeight": false,
+        "multiple": false,
+        "jsx": false
+    },
+    "example": {
+        "attributes": {
+            "data": {
+                "hero_block_title": "This is an example text field",
+                "hero_block_text": "This is an example text area field"
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.comp_related-resources {
+  padding: $m64 0 $m80;
+  margin-top: $m80;
+  
+    @media only screen and (min-width: $sm-start) {
+      padding: $m136 0 calc($m128 + 30px);
+    }
+  
+    h2 {
+      margin-bottom: $m72;
+    }
+  
+    .resource-row {
+      row-gap: $m56;
+    }
+  
+    .resource-link {
+      display: block;
+      height: 100%;
+      transition: transform .4s ease;
+
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            transform: translateY(-12px);
+          }
+        }
+      
+    }
+    
+    .resource-card {
+      background: #fff;
+      height: 100%;
+      color: $text-main;
+      padding: $m56 $m40;
+      
+        p {
+          margin: $m16 0;
+        }
+      
+    }
+  
+}

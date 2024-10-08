@@ -1,0 +1,199 @@
+{
+    "key": "group_649d2af0a42c8",
+    "title": "Integration post",
+    "fields": [
+        {
+            "key": "field_649d2af14f078",
+            "label": "(Column 6\/12)",
+            "name": "",
+            "aria-label": "",
+            "type": "acfe_column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "columns": "6\/12",
+            "endpoint": 0,
+            "border": [
+                "column",
+                "fields"
+            ],
+            "border_endpoint": [
+                "endpoint"
+            ]
+        },
+        {
+            "key": "field_649d2db54f07b",
+            "label": "Integration logo",
+            "name": "integration_logo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "uploader": "",
+            "return_format": "array",
+            "upload_folder": "",
+            "acfe_thumbnail": 1,
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "thumbnail",
+            "library": "all"
+        },
+        {
+            "key": "field_649d2da84f079",
+            "label": "(Column 6\/12)",
+            "name": "",
+            "aria-label": "",
+            "type": "acfe_column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "columns": "6\/12",
+            "endpoint": 0,
+            "border": [
+                "column",
+                "fields"
+            ],
+            "border_endpoint": [
+                "endpoint"
+            ]
+        },
+        {
+            "key": "field_649d2dd34f07c",
+            "label": "Integration type",
+            "name": "",
+            "aria-label": "",
+            "type": "acfe_post_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "field_type": "taxonomy",
+            "taxonomy": "integration-type"
+        },
+        {
+            "key": "field_652ec5fd3948a",
+            "label": "(Column 12\/12)",
+            "name": "",
+            "aria-label": "",
+            "type": "acfe_column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "columns": "12\/12",
+            "endpoint": 0,
+            "border": [
+                "column",
+                "fields"
+            ],
+            "border_endpoint": [
+                "endpoint"
+            ]
+        },
+        {
+            "key": "field_652ec6273948b",
+            "label": "Integration docs URL",
+            "name": "integration_docs_url",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_649d2dae4f07a",
+            "label": "(Column Endpoint)",
+            "name": "",
+            "aria-label": "",
+            "type": "acfe_column",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "endpoint": 1,
+            "border_endpoint": [
+                "endpoint"
+            ],
+            "columns": "6\/12",
+            "border": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "integration"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_display_title": "",
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1697564238,
+    "acfe_categories": {
+        "post-type-fields": "Post type"
+    }
+}

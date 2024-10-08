@@ -1,0 +1,84 @@
+/*************************************
+  GSAP items
+*************************************/
+
+.gs-dev-tools {
+  z-index: 9999999;
+}
+
+/*************************************
+  Page animation
+*************************************/
+
+//body:not(.home) .site-wrap {
+//  opacity: 0;
+//  transform: translateY(10vh);
+//  transition: all $trans2;
+  
+//    &.loaded {
+//      opacity: 1;
+//      transform: translateY(0);
+//    }
+  
+//}
+
+//#fader {
+//  //visibility: hidden;
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  z-index: 999999;
+//  pointer-events: none;
+//  background: white;
+//  animation-duration: 300ms;
+//  animation-timing-function: ease-in-out;
+//}
+
+//#fader:before {
+//  content: 'fade'
+//}
+
+//@keyframes fade-out {
+//  from { opacity: 1 }
+//  to { opacity: 0 }
+//}
+
+//@keyframes fade-in {
+//  from { opacity: 0 }
+//  to { opacity: 1 }
+//}
+
+//#fader.fade-out {
+//  opacity: 0;
+//  animation-name: fade-out;
+//}
+
+//#fader.fade-in {
+//  opacity: 1;
+//  //visibility: visible;
+//  animation-name: fade-in;
+//}
+
+/*************************************
+  Keyframe animations
+*************************************/
+
+@-webkit-keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

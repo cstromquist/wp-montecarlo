@@ -1,0 +1,6 @@
+{
+  "sync.autoDownload": true,
+  "editor.wordWrap": "on",
+  "editor.comments.insertSpace": false,
+  "javascript.suggest.completeJSDocs": false
+}

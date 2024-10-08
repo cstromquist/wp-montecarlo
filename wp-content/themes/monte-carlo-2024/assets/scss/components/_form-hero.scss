@@ -1,0 +1,128 @@
+.block-form-hero {
+  width: calc(100% + (clamp(6.4vw, 6.4vw, 48px) * 2));
+  margin-left: calc(clamp(6.4vw, 6.4vw, 48px) * -1);
+  
+    @media only screen and (min-width: $sm-start) {
+      width: calc(100% + (clamp(48px, 6.25vw, 88px) * 2));
+      margin-left: calc(clamp(48px, 6.25vw, 88px) * -1);
+    }
+    
+    @media only screen and (min-width: $lg-start) {
+      width: calc(100% + (clamp(106px, 8.281vw, 120px) * 2));
+      margin-left: calc(clamp(106px, 8.281vw, 120px) * -1);
+    }
+  
+}
+
+.comp__form-hero {
+  padding-top: calc(#{var(--header-height)} + #{$m128});
+  padding-bottom: $m80;
+  
+    >.row {
+      row-gap: $m64;
+    }
+    
+    //h1, p, .cta, img {
+    //  opacity: 0;
+    //}
+    h1, p {
+      font-kerning: none;
+      div {
+        clip-path: polygon(0 0, 100% 0, 100% 120%, 0% 120%);
+      }
+    }
+  
+    .content {
+      
+        .text {
+          margin-top: $m24;
+        }
+        
+        img {
+          width: 100%;
+          height: auto;
+          margin-top: $m56;
+        }
+      
+    }
+    
+    .hero-form {
+      
+        .hbspt-form {
+          
+            fieldset {
+              max-width: 100%;
+              
+                .field {
+                  
+                    label {
+                      font-size: $b1;
+                      font-weight: 700;
+                      font-family: $titleFont;
+                    }
+                  
+                }
+                
+                input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+                  width: 100%;
+                  margin-top: $m8;
+                }
+                
+                .hs-error-msgs {
+              
+                    li label.hs-error-msg {
+                      font-size: 13px !important;
+                      font-family: $bodyFont;
+                      margin-bottom: 0;
+                    }
+                  
+                }
+              
+            }
+            
+            .hs-form-field {
+              margin-bottom: $m24;
+            }
+            
+        }
+        
+        &.two-column {
+          
+            fieldset {
+              
+                .field {
+                  
+                    label {
+                      font-size: $b1;
+                    }
+                  
+                }
+                
+            }
+            
+            .hs-form-field {
+              margin-bottom: $m24;
+            }
+          
+            fieldset.form-columns-2 {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: flex-start;
+              
+                >div {
+                  flex-grow: 1;
+                  min-width: 200px;
+                }
+                
+                input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+                  width: 100%;
+                  margin-top: $m8;
+                }
+              
+            }
+          
+        }
+      
+    }
+  
+}

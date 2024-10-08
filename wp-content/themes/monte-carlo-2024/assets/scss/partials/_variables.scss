@@ -1,0 +1,330 @@
+@function encodecolor($string) {
+  @if type-of($string) == 'color' and str-index(#{$string}, '#') == 1 {
+    $hex: str-slice(ie-hex-str($string), 4);
+    $string: unquote('#{$hex}');
+
+    @return '%23' + $string;
+  }
+
+  @return $string;
+}
+
+//@font-face {
+//  font-family: "Capito";
+//  src: url("../fonts/Capito03-Medium.woff2") format("woff2");
+//  font-weight: 450;
+//  font-display: swap;
+//  unicode-range: U+0025-00FF;
+//}
+
+@font-face {
+  font-family: "Capito";
+  src: url("../fonts/Capito03-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  //unicode-range: U+0025-00FF;
+}
+
+@font-face {
+  font-family: "National";
+  src: url("../fonts/national-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: swap;
+  //unicode-range: U+0025-00FF;
+}
+
+//@font-face {
+//  font-family: "National";
+//  src: url("../fonts/national-semibold.woff2") format("woff2");
+//  font-weight: bold;
+//  font-display: swap;
+//  unicode-range: U+0025-00FF;
+//}
+
+$titleFont: 'Capito', serif;
+$bodyFont: 'National', sans-serif;
+
+
+/******************************************
+// Colors
+******************************************/
+
+$black: #000000;
+$white: #ffffff;
+$error: #ff2323;
+
+$river: #00BEFF;
+  $riverShade1: #01A3DB;
+$ocean: #0073B4;
+  $oceanShade2: #005788;
+$deepSea: #004168;
+  $deepSeaShade1: #003453;
+$fish: #D89700;
+  $fishTint1: #EDA600;
+  $fishShade1: #C08701;
+$seastar: #FF9FB9;
+$grass: #51C08B;
+  $grassShade1: #53AA80;
+$sky: #E6F1F6;
+  $skyShade1: #BFD0D9;
+  $skyShade2: #8099A9;
+
+$text-main: $deepSeaShade1;
+$text-secondary: $white;
+
+$button-primary: $fishTint1;
+$button-secondary: blue;
+$button-primary-hover: $fishShade1;
+$button-secondary-hover: rgb(81, 81, 235);
+$button-text: $deepSeaShade1;
+
+$link-primary: #000;
+$link-secondary: blue;
+$link-primary-hover: #333;
+$link-secondary-hover: rgb(81, 81, 235);
+
+$encoded-link-primary: encodecolor($link-primary);
+$encoded-link-primary-hover: encodecolor($link-primary-hover);
+$encoded-link-secondary: encodecolor($link-secondary);
+$encoded-link-secondary-hover: encodecolor($link-secondary-hover);
+
+/******************************************
+// Font sizes
+******************************************/
+
+$h1: clamp(45px, 5.093vw, 65px);
+$h2: clamp(40px, 4.167vw, 55px);
+$h3: clamp(35px, 3.7037vw, 45px);
+$h4: clamp(30px, 3.241vw, 40px);
+$h5: clamp(25px, 2.7778vw, 35px);
+$h6: clamp(20px, 2.315vw, 30px);
+
+$h1Weight: 700;
+$h2Weight: 700;
+$h3Weight: 700;
+$h4Weight: 700;
+$h5Weight: 700;
+$h6Weight: 700;
+
+$b1: clamp(22px, 2.176vw, 25px);
+$b2: clamp(20px, 1.944vw, 22px);
+$b3: clamp(18px, 1.759vw, 20px);
+$b4: clamp(15px, 1.527vw, 18px);
+$b5: clamp(13px, 1.296vw, 15px);
+$b6: 13px;
+
+$p: $b1;
+$p-sm: $b2;
+$p-xs: $b3;
+$p-legal: $b6;
+
+$posth1: $h3;
+$posth2: $h4;
+$posth3: $h5;
+$posth4: $h6;
+$posth5: $b1;
+$posth6: $b2;
+
+$sub-text-sm: $b2;
+$sub-text-lg: $b1;
+
+// Sizes in the CMS (Uses desktop size from the clamp equation but in px instead of vw)
+
+$cms-h1: 55px;
+$cms-h2: 45px;
+$cms-h3: 40px;
+$cms-h4: 35px;
+$cms-h5: 30px;
+$cms-h6: 25px;
+
+$cms-p: 24px;
+$cms-p-sm: 21px;
+$cms-p-xs: 19px;
+$cms-p-legal: 13px;
+
+/******************************************
+// Sizes
+******************************************/
+
+$m8: clamp(calc(8px*.75), 0.586vw, 8px);
+$m16: clamp(calc(16px*.875), 1.171vw, 16px);
+$m24: clamp(calc(24px*.875), 1.757vw, 24px);
+$m32: clamp(calc(32px*.875), 2.343vw, 32px);
+$m40: clamp(calc(40px*.75), 2.928vw, 40px);
+$m48: clamp(calc(48px*.75), 3.514vw, 48px);
+$m56: clamp(calc(56px*.75), 4.100vw, 56px);
+$m64: clamp(calc(64px*.75), 4.685vw, 64px);
+$m72: clamp(calc(72px*.75), 5.271vw, 72px);
+$m80: clamp(calc(80px*.75), 5.857vw, 80px);
+$m88: clamp(calc(88px*.75), 6.442vw, 88px);
+$m96: clamp(calc(96px*.75), 7.028vw, 96px);
+$m104: clamp(calc(104px*.75), 7.613vw, 104px);
+$m112: clamp(calc(112px*.75), 8.199vw, 112px);
+$m120: clamp(calc(120px*.75), 8.785vw, 120px);
+$m128: clamp(calc(128px*.75), 9.370vw, 128px);
+$m136: clamp(calc(136px*.75), 9.956vw, 136px);
+$m144: clamp(calc(144px*.75), 10.542vw, 144px);
+$m184: clamp(calc(184px*.75), 13.470vw, 184px);
+$m240: clamp(calc(240px*.75), 17.570vw, 240px);
+
+$spacer-xxs: $m8;
+$spacer-xs: $m16;
+$spacer-sm: $m24;
+$spacer-md: $m32;
+$spacer-lg: $m48;
+$spacer-xl: $m64;
+$spacer-xxl: $m80;
+$spacer-section-break: $m120;
+
+/******************************************
+// Transitions
+******************************************/
+
+$trans1: .3s;
+$trans2: .4s;
+$trans3: .6s;
+
+/******************************************
+// Mixins
+******************************************/
+
+@mixin contain() {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-left: clamp(6.400vw, 6.400vw, 48px); //24px
+  padding-right: clamp(6.400vw, 6.400vw, 48px); //24px
+  
+    @media only screen and (min-width: $sm-start) {
+      padding-left: clamp(48px, 6.25vw, 88px); //88px
+      padding-right: clamp(48px, 6.25vw, 88px); //88px
+    }
+  
+    //@media only screen and (min-width: $md-start) {
+    //  padding-left: clamp(88px, 7.871vw, 106px); //106px
+    //  padding-right: clamp(88px, 7.871vw, 106px); //106px
+    //}
+    
+    @media only screen and (min-width: $lg-start) {
+      padding-left: clamp(106px, 8.281vw, 120px); //120px
+      padding-right: clamp(106px, 8.281vw, 120px); //120px
+    }
+  
+}
+
+@mixin paddingHack($paddingBottom) {
+  content: " ";
+  display: block;
+  padding-bottom: $paddingBottom;
+}
+
+@mixin imgPadHack($paddingBottom, $x: 50%, $y: 50%) {
+  position: relative;
+  
+    &:after {
+      @include paddingHack($paddingBottom);
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: $x $y;
+    }
+  
+}
+
+@mixin grid-center-last( $columns ) {
+	$total_columns: $columns * 2;
+	$span: calc($total-columns / $columns);
+	$offset: $columns - 1;
+	$nth-child: if( $columns % 2 == 0, 'odd', 'even' );
+
+	display: grid;
+	grid-template-columns: repeat( $total_columns, 1fr );
+
+	& > * {
+		grid-column: span $span;
+
+		&:nth-last-child(#{$offset}):nth-child(#{$nth-child}) {
+			grid-column: $span / span $span;
+		}
+	}
+}
+
+@mixin plusMinus($width, $lineWidth, $color) {
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  width: $width;
+  height: $width;
+  transform: rotate(180deg);
+  position: relative;
+  &.active, &.is-active {
+    transform: rotate(0deg);
+  }
+  &::before {
+    content: '';
+    display: block;
+    width: $width;
+    height:0px;
+    border-bottom: solid $lineWidth $color;
+    position: absolute;
+    bottom: calc($width /2 - $lineWidth/2);
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+  }
+  &.active::before, &.is-active::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height:0px;
+    border-bottom: solid $lineWidth;
+    position: absolute;
+    bottom: calc($width /2 - $lineWidth/2);
+    transform: rotate(90deg);
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: $width;
+    height:0px;
+    border-bottom: solid $lineWidth $color;
+    position: absolute;
+    bottom: calc($width /2 - $lineWidth/2);
+    transition: all .3s ease;
+  }
+  &.active::after, &.is-active::after {
+    border-bottom: solid $lineWidth;
+  }
+}
+
+@mixin arrowIcon($color: black) {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 13'%3E%3Cpath d='m21.72,7.08H0v-1.23h21.66L16.75.87l.85-.87,5.97,6.07.43.43-.43.43-5.97,6.07-.85-.87,4.97-5.05Z' fill='#{$color}' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+@mixin shapeDivider($height, $position, $flipped: false, $color: #ffffff) {
+    
+  @if $position == bottom {
+    bottom: 0;
+    transform: rotate(180deg);
+  } @else {
+    top: 0;
+  }
+
+    svg {
+      height: $height;
+      
+        @if $flipped {
+          transform: rotateY(180deg);
+        }
+      
+    }
+
+    .shape-fill {
+      fill: $color;
+    }
+
+}

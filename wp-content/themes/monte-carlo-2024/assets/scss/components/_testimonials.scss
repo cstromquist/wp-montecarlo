@@ -1,0 +1,149 @@
+.comp_testimonials {
+  padding-top: $m80;
+  padding-bottom: $m80;
+  
+    &:not(.make-clear) {
+      margin-top: $m80;
+      margin-bottom: $m80;
+      
+        .cta-wrap a {
+          color: #fff;
+        }
+    
+    }
+    
+    .testimonial_section-title {
+      margin-bottom: $m64;
+      
+        p {
+          margin: 0;
+        }
+      
+    }
+    
+    .testimonial-primary {
+      @include imgPadHack(100%);
+      margin-bottom: $m32;
+    }
+    
+    p.h5.quote, .quote {
+      font-family: $titleFont;
+      font-weight: 400;
+    }
+    
+    .quotee {
+      
+        span {
+          display: block;
+        }
+      
+    }
+      
+    &.single {
+      
+        .testimonial_section-title {
+          margin-bottom: $m104;
+        }
+      
+        .with_primary {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          row-gap: $m32;
+          
+            @media only screen and (min-width: $sm-start) {
+              flex-direction: row;
+              column-gap: clamp(40px, 10%, 165px);
+            }
+          
+            .testimonial-images {
+              width: 40%;
+              
+                @media only screen and (min-width: $sm-start) {
+                  flex: 0 0 30%;
+                  max-width: 206px;
+                }
+              
+            }
+          
+        }
+        
+        .no_primary {
+          
+          .testimonial-logo {
+            margin-bottom: $m32;
+            max-width: 210px;
+            
+              img {
+                max-height: 31px;
+              }
+            
+          }
+          
+        }
+        
+        .quote {
+          margin-bottom: $m48;
+        }
+        
+        .cta-wrap {
+          margin-top: $m32;
+        }
+      
+    }
+    
+    &.double, &.triple {
+      
+        .testimonial-wrap > .row {
+          row-gap: $m72;
+        }
+        
+        .testimonial-images {
+          width: 40%;
+          max-width: 210px;
+          margin-bottom: $m40;
+          
+            @media only screen and (min-width: $md-start) {
+              width: auto;
+            }
+          
+            .testimonial-logo img {
+              max-height: 31px;
+            }
+          
+        }
+      
+        .testimonial-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      
+        .quote {
+          margin-bottom: $m40;
+        }
+        
+        .cta-wrap {
+          margin-top: $m32;
+        }
+      
+    }
+    
+    .section-cta-wrap {
+      margin-top: $m80;
+      
+        a.btn {
+          color: $deepSeaShade1;
+          font-weight: 700;
+          
+            @media (hover: hover) and (pointer: fine) {
+              &:hover {
+                color: #fff;
+              }
+            }
+          
+        }
+      
+    }
+  
+}

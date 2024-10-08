@@ -1,0 +1,396 @@
+.product-template-page-integrations {
+  
+    .integrations-search {
+      position: relative;
+      display: inline-block;
+      margin-top: $m56;
+        
+        >span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 26px;
+          width: 23px;
+          height: 23px;
+          transform: translateY(-50%);
+        }
+        
+        svg {
+          
+            path {
+              fill: $deepSea;
+            }
+          
+        }
+      
+    }
+  
+    #quicksearch {
+      appearance: none;
+      background: $fishTint1;
+      padding: 14px 26px 14px 66px;
+      font-size: 16px;
+      font-family: $titleFont;
+      font-weight: 700;
+      color: $text-main;
+      border: none;
+      border-radius: 0;
+      outline: none;
+      
+        &::placeholder {
+          color: $text-main;
+        }
+        
+        @media only screen and (min-width: $sm-start) {
+          font-size: $b1;
+        }
+      
+    }
+  
+    .integrations {
+      display: flex;
+      column-gap: 25px;
+      width: 100%;
+      padding-top: $m104;
+      
+        .filters-wrap {
+          display: none;
+
+            @media only screen and (min-width: $md-start) {
+              display: block;
+              flex: 0 0 225px;
+            }
+
+            .sortOrder {
+              display: none;
+
+                button {
+                  padding: 1px 12px;
+                  margin-right: 8px;
+                  border: 1px solid;
+                }
+
+            }
+
+            .sort-by-button-group {
+              margin-bottom: $m32;
+            }
+
+            p.m1 {
+              margin-bottom: $m16;
+            }
+
+            .is-checked {
+              color: $fishTint1;
+            }
+
+            .button {
+              display: block;
+              font-family: $bodyFont;
+              font-size: $b2;
+              line-height: 1.8;
+              width: 100%;
+              padding: 4px 0;
+              text-align: left;
+              transition: all $trans2 ease;
+
+                @media (hover: hover) and (pointer: fine) {
+                  &:hover {
+                    color: $fishTint1;
+                  }
+                }
+
+            }
+
+        }
+
+        .integration-filter-container {
+          flex: 0 0 100%;
+          opacity: 0;
+          transition: opacity $trans1 ease;
+
+            @media only screen and (min-width: $md-start) {
+              width: calc(100% - 250px);
+              flex: 0 0 calc(100% - 250px);
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+
+            .cta-wrap {
+              margin-top: $m80;
+              margin-bottom: 0;
+              text-align: center;
+            }
+
+        }
+
+        .integrations-container {
+          width: 100%;
+
+            .grid-sizer {
+              width: 100%;
+              height: 100px;
+
+                @media only screen and (min-width: $sm-start) {
+                  width: calc(50% - 16px);
+                }
+
+                @media only screen and (min-width: $lg-start) {
+                  width: calc(33.3333333333333% - 16px);
+                }
+
+            }
+
+            .filter-item {
+              width: 100%;
+              margin-bottom: 30px;
+
+                @media only screen and (min-width: $sm-start) {
+                  width: calc(50% - 16px);
+                }
+
+                @media only screen and (min-width: $lg-start) {
+                  width: calc(33.3333333333333% - 16px);
+                }
+                a.card {
+                  transition: 200ms;
+                  text-decoration: none;
+                  p, span {
+                    text-decoration: none;
+                  }
+                  &:hover {
+                    transform: translateY(-0.2rem);
+                  }
+                }
+                .card {
+                  display: flex;
+                  align-items: center;
+                  column-gap: 20px;
+                  padding: 20px $m24;
+                  height: 113px;
+                  background: #fff;
+                  box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.10);
+
+                    .image {
+                      flex: 0 0 $m64;
+
+                        @media only screen and (min-width: $sm-start) {
+                          flex: 0 0 64px;
+                        }
+
+                        @media only screen and (min-width: $lg-start) {
+                          flex: 0 0 $m64;
+                        }
+
+                        img {
+                          width: 100%;
+                          height: auto;
+                          margin-top: -5px;
+                        }
+
+                    }
+
+                    .content {
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+
+                        p {
+                          font-weight: 700;
+                        }
+
+                        span {
+                          display: inline-block;
+                          align-self: flex-start;
+                          background: $deepSea;
+                          padding: 2px 4px 4px;
+                          color: #fff;
+                          font-size: 13px;
+                          margin-top: 10px;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+      
+    }
+    
+    .block-carousel-block {
+      margin-top: $m80;
+    }
+    
+    #requestForm {
+      margin-bottom: $m136;
+      
+        h2 {
+          margin-bottom: $m24;
+        }
+      
+        .integration-request-form {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          
+            .submitted-message {
+              width: 511px;
+              margin: $m40 auto 0;
+              text-align: center;
+              
+                p {
+                  font-weight: 700;
+                  font-size: $b2;
+                  line-height: 1.2;
+                  color: $ocean;
+                }
+              
+            }
+          
+        }
+        
+        form {
+          display: block;
+          margin: $m56 auto 0;
+          text-align: center;
+          
+            @media only screen and (min-width: $sm-start) {
+              width: 554px;
+            }
+          
+            .hs-dependent-field {
+              display: inline-block;
+              width: 50%;
+              position: relative;
+              
+                .input {
+                  position: relative;
+                  display: inline-flex;
+                  justify-content: flex-start;
+                  width: calc(100% - 9px);
+                  height: 50px;
+                  border: 1px solid $ocean;
+                  border-radius: 3px;
+                  background: #fff;
+                  cursor: pointer;
+                  
+                    &::after {
+                      content: " ";
+                      display: block;
+                      position: absolute;
+                      right: 16px;
+                      top: 52%;
+                      width: 0;
+                      height: 0;
+                      border-style: solid;
+                      border-width: 10px 6px 0 6px;
+                      border-color: $fishTint1 transparent transparent transparent;
+                      transform: translateY(-50%);
+                    }
+                  
+                }
+              
+                select {
+                  width: 100%;
+                  height: 100%;
+                  padding: 10px 40px 10px 20px;
+                  margin: 0;
+                  cursor: pointer;
+                  outline: none;
+                  appearance: none;
+                  background-color: transparent;
+                  border: none;
+                  color: $text-main;
+                  z-index: 1;
+                  font-size: $b2;
+                  line-height: 1.2;
+                  font-family: $bodyFont;
+                  font-weight: 400;
+                }
+                
+                ul.hs-error-msgs {
+                  padding: 0 6px !important;
+                }
+              
+            }
+            
+            .hs-email {
+              display: inline-block;
+              width: 50%;
+              position: relative;
+              
+                .input {
+                  display: inline-flex;
+                  justify-content: flex-end;
+                  width: 100%;
+                  height: 50px;
+                }
+              
+                input {
+                  color: $text-main;
+                  width: calc(100% - 9px);
+                  height: 100%;
+                  border: 1px solid $ocean;
+                  border-radius: 3px;
+                  background: #fff;
+                  padding: 10px 20px;
+                  font-size: $b2;
+                  line-height: 1.2;
+                  font-family: $bodyFont;
+                  font-weight: 400;
+                }
+                
+                ul.hs-error-msgs {
+                  padding: 0 6px 0 10px !important;
+                }
+              
+            }
+            
+            .hs_other_integration_request {
+              margin-top: 8px;
+              
+                label {
+                  margin-bottom: 4px;
+                  text-align: left;
+                  display: block;
+                  padding: 6px;
+                }
+                
+                .input::after {
+                  display: none;
+                }
+                
+                input {
+                  color: $text-main;
+                  width: calc(100% - 9px);
+                  height: 100%;
+                  background: #fff;
+                  padding: 10px 20px;
+                  font-size: $b2;
+                  line-height: 1.2;
+                  font-family: $bodyFont;
+                  font-weight: 400;
+                }
+              
+            }
+            
+            .hs_submit {
+              margin-top: 60px;
+            }
+            
+            ul.hs-error-msgs {
+              list-style: none;
+              margin: 0;
+              position: absolute;
+              text-align: left;
+            }
+          
+        }
+      
+    }
+  
+}

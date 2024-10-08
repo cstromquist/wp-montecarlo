@@ -1,0 +1,73 @@
+.bg_none {
+  background-color: transparent;
+  color: $text-main;
+}
+
+.bg_river {
+  background-color: $riverShade1;
+  color: #fff;
+}
+
+.bg_ocean {
+  background-color: $ocean;
+  color: #fff;
+}
+
+.bg_deepSea {
+  background-color: $deepSea;
+  color: #fff;
+}
+
+.bg_fish {
+  background-color: $fish;
+  color: $text-main;
+}
+
+.bg_fishTint1 {
+  background-color: $fishTint1;
+  color: $text-main;
+}
+
+.bg_seastar {
+  background-color: $seastar;
+}
+
+.bg_grass {
+  background-color: $grass;
+}
+
+.bg_sky {
+  background-color: $sky;
+}
+
+.text_skyShade2 {
+  color: $skyShade2;
+}
+
+.text_ocean {
+  color: $ocean;
+}
+
+.img_16x9 {
+  @include imgPadHack(56.25%);
+}
+
+.img_3x2 {
+  @include imgPadHack(66.666666667%);
+}
+
+.img_1x1 {
+  @include imgPadHack(100%);
+}
+
+.img_16x9, .img_3x2, .img_1x1 {
+  
+    &.contained {
+      
+        img {
+          object-fit: contain;
+        }
+      
+    }
+  
+}

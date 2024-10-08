@@ -1,0 +1,226 @@
+.block-cards-block {
+  padding-top: $m80;
+  padding-bottom: $m80;
+  
+  .cards-header {
+    @include row();
+    @include center(xs);
+    text-align: center;
+    margin-bottom: $m72;
+    
+      h2 {
+        margin: 0;
+      }
+    
+      .section-text {
+        margin-top: $m32;
+        
+          p {
+            margin-top: 0;
+            margin-bottom: $m32;
+          }
+          
+          :last-child {
+            margin-bottom: 0;
+          }
+        
+      }
+    
+  }
+  
+  .comp__columns-layout {
+    
+      &.narrow {
+        display: grid;
+        gap: $m64;
+        
+          @media only screen and (max-width: $xs-max ) {
+            
+              .box-media {
+                width: 60%;
+                margin: auto;
+              }
+            
+          }
+        
+          @media only screen and (min-width: $sm-start) {
+            grid-template-columns: repeat(3, 1fr);
+            
+              &.centered-layout {
+                @include grid-center-last( 3 );
+              }
+            
+          }
+          
+          @media only screen and (min-width: $md-start) {
+            max-width: 83.3333333%;
+            margin: auto;
+            justify-content: space-between;
+            
+              .card_box {
+                max-width: 226px;
+                margin-left: auto;
+                margin-right: auto;
+              }
+            
+          }
+          
+          .card_box {
+            width: 100%;
+          }
+          
+          .box-title {
+            
+              p {
+                font-size: clamp(25px, 2.315vw, 30px);
+                font-family: $titleFont;
+                font-weight: $h6Weight;
+                line-height: 1.15;
+              }
+            
+          }
+
+      }
+      
+      &.wide {
+        display: grid;
+        gap: $m64;
+        
+          @media only screen and (min-width: $sm-start) {
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            row-gap: $m72;
+            
+              &.centered-layout {
+                @include grid-center-last( 3 );
+              }
+            
+              .card_box {
+                max-width: 330px;
+              }
+            
+          }
+          
+          .box-title {
+
+              p {
+                @extend .h5;
+              }
+
+          }
+        
+      }
+      
+      &.four_col {
+        
+          @media only screen and (min-width: $sm-start) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          
+          @media only screen and (min-width: $md-start) {
+            grid-template-columns: repeat(4, 1fr);
+            max-width: none;
+          }
+        
+      }
+
+      .box-contain {
+        width: 100%;
+
+          .box-media {
+            
+              a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              }
+            
+              &._16x9 {
+                @include imgPadHack(56.25%);
+              }
+              
+              &._3x2 {
+                @include imgPadHack(66.66666667%);
+              }
+              
+              &._1x1 {
+                @include imgPadHack(100%);
+              }
+              
+              &._16x9, &._3x2, &._1x1 {
+  
+                  &.contained {
+                    
+                      img {
+                        object-fit: contain;
+                      }
+                    
+                  }
+                
+              }
+
+          }
+
+          .box-content {
+            margin-top: $spacer-sm;
+
+              .box-title {
+                margin-bottom: $spacer-xs;
+              }
+
+              .box-copy {
+                
+                p {
+                  font-size: $p-sm;
+                  line-height: 1.2;
+                  margin-bottom: $m24;
+                
+                    &:last-of-type {
+                      margin-bottom: 0;
+                    }
+                    
+                    &.h1 {
+                      font-size: $h1;
+                    }
+                    
+                    &.h2 {
+                      font-size: $h2;
+                    }
+                    
+                    &.h3 {
+                      font-size: $h3;
+                    }
+                    
+                    &.h4 {
+                      font-size: $h4;
+                    }
+                    
+                    &.h5 {
+                      font-size: $h5;
+                    }
+                  
+                }
+
+                :last-child {
+                  margin-bottom: 0;
+                }
+
+              }
+
+              .button-wrap {
+                margin-top: $spacer-sm;
+              }
+
+          }
+
+      }
+
+  }
+  
+  .section-cta-wrap {
+    margin-top: $m80;
+  }
+  
+}

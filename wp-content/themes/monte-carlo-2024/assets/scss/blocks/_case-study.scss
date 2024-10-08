@@ -1,0 +1,123 @@
+.block-case-study-block {
+  padding-top: $m80;
+  padding-bottom: $m80;
+  
+    h2 {
+      margin-top: 0;
+      margin-bottom: $m48;
+    }
+    
+    .data-stack {
+      
+        p {
+          margin: 0 0 $m24;
+        }
+        
+        ul {
+          list-style: none;
+          padding: 0 !important;
+          margin: 0 0 $m56;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          
+            @media only screen and (min-width: $sm-start) {
+              gap: 60px;
+            }
+          
+            li {
+              flex: 0 0 40px;
+              @include imgPadHack(100%);
+              
+                @media only screen and (min-width: $sm-start) {
+                  flex: 0 0 60px;
+                }
+              
+                img {
+                  object-fit: contain;
+                }
+              
+            }
+          
+        }
+      
+    }
+    
+    .callout-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      
+        @media only screen and (min-width: $sm-start) {
+          flex-direction: row;
+        }
+        
+        >div {
+          
+            @media only screen and (min-width: $sm-start) {
+              max-width: 331px;
+              width: 40%;
+            }
+          
+        }
+      
+    }
+    
+    .challenge-solution {
+      margin: $m64 0 $m80;
+      padding: $m64 0;
+      border-top: 2px solid $skyShade1;
+      border-bottom: 2px solid $skyShade1;
+      
+        .row {
+          row-gap: $m64;
+        }
+      
+        h3 {
+          margin-bottom: $m24;
+        }
+        
+        .column-text {
+          font-size: $p-sm;
+          padding-right: $m16;
+        }
+        
+        li {
+          padding-left: 8px;
+          
+            &::marker {
+              font-size: 60%;
+            }
+          
+        }
+      
+    }
+    
+    .client-story {
+      
+        .client-logo {
+          margin-bottom: $m32;
+        }
+      
+        .quote {
+          font-family: $titleFont;
+          font-size: $h5;
+          line-height: 1.15;
+          margin-bottom: $m48;
+        }
+        
+        .quotee {
+          
+            span {
+              display: block;
+            }
+          
+        }
+        
+        .cta-wrap {
+          margin-top: $m24;
+        }
+      
+    }
+  
+}

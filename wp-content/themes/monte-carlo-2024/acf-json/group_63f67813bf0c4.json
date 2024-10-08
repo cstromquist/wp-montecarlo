@@ -1,0 +1,181 @@
+{
+    "key": "group_63f67813bf0c4",
+    "title": "Button\/link",
+    "fields": [
+        {
+            "key": "field_63f678149183c",
+            "label": "",
+            "name": "comp__link",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "acfe_seamless_style": 1,
+            "sub_fields": [
+                {
+                    "key": "field_63f6849dc70f4",
+                    "label": "(Column 6\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "columns": "6\/12",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_63f679849183e",
+                    "label": "Link",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "acfe_advanced_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "taxonomy": ""
+                },
+                {
+                    "key": "field_63f684a5c70f5",
+                    "label": "(Column 6\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "columns": "6\/12",
+                    "endpoint": 0
+                },
+                {
+                    "key": "field_63f68468c70f3",
+                    "label": "Button alignment",
+                    "name": "button_alignment",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "left": "<span class=\"dashicons dashicons-editor-alignleft\"><\/span> Left",
+                        "center": "<span class=\"dashicons dashicons-editor-aligncenter\"><\/span> Center",
+                        "right": "<span class=\"dashicons dashicons-editor-alignright\"><\/span> Right"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "layout": "horizontal"
+                },
+                {
+                    "key": "field_63f684a8c70f6",
+                    "label": "(Column Endpoint)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "endpoint": 1,
+                    "columns": "6\/12"
+                },
+                {
+                    "key": "field_63f678c19183d",
+                    "label": "Select button style",
+                    "name": "select_button_cta_style",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "button-var-1": "<a class=\"btn button-var-1\">Btn style 1<\/a>",
+                        "button-var-2": "<a class=\"btn button-var-2\">Btn style 2<\/a>",
+                        "button-var-3": "<a class=\"btn button-var-3\">Btn style 3<\/a>",
+                        "button-var-4": "<a class=\"btn button-var-4\">Btn style 4<\/a>",
+                        "link-var-1": "<a class=\"btn link-var-1\">Link style 1<\/a>",
+                        "link-var-2": "<a class=\"btn link-var-2\">Link style 2<\/a>",
+                        "link-var-3": "<a class=\"btn link-var-3\">Link style 3<\/a>",
+                        "link-var-4": "<a class=\"btn link-var-4\">Link style 4<\/a>"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "vertical",
+                    "save_other_choice": 0
+                }
+            ],
+            "acfe_group_modal": 0,
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1677484367,
+    "acfe_categories": {
+        "acf-component": "Component"
+    }
+}

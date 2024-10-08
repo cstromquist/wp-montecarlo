@@ -1,0 +1,322 @@
+#footer {
+  background-color: $deepSea;
+  color: $white;
+
+    ul {
+      list-style: none;
+    }
+
+    .footer-heading {
+      padding-top: $m112;
+      padding-bottom: $m64;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      row-gap: $m16;
+
+        h2 {
+
+            @media only screen and (min-width: $lg-start) {
+              font-size: $h1;
+            }
+
+        }
+
+    }
+
+    .footer-main {
+      padding-bottom: $m64;
+
+        @media only screen and (min-width: $md-start) {
+          display: flex;
+          column-gap: 40px;
+          justify-content: space-between;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          transition: color $trans2 ease;
+
+            @media (hover: hover) and (pointer: fine) {
+              &:hover {
+                color: $fishTint1;
+              }
+            }
+
+        }
+    }
+
+    .footer-card {
+      position: relative;
+
+      .content {
+        transition: all $trans2 ease;
+      }
+
+      &:hover {
+        .content,
+        span.link {
+          color: $fishTint1;
+        }
+
+        span.link {
+          &::after {
+            transform: translateX(10px);
+          }
+        }
+      }
+
+      a {
+        &::after {
+          content: " ";
+          display: block;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: 1;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 1000px;
+      column-gap: 30px;
+      justify-content: space-between;
+
+        @media only screen and (min-width: $sm-start) {
+          flex-direction: row;
+          flex-wrap: nowrap;
+          max-height: none;
+          column-gap: 38px;
+        }
+
+        .nav-col {
+          width: calc(50% - 15px);
+
+            @media only screen and (min-width: $sm-start) {
+              width: calc(25% - 15px);
+            }
+
+        }
+
+        ul {
+
+            li {
+              margin-bottom: calc(#{$m16} - 3px);
+              color: rgba(255,255,255,0.5);
+              font-family: $titleFont;
+
+                &.nav-title {
+                  font-size: $b3;
+                  line-height: 1.1;
+                  font-weight: 700;
+                  margin-bottom: calc(#{$m24} - 4px);
+                  margin-top: $m32;
+
+                    @media only screen and (min-width: $md-start) {
+                      margin-top: 0;
+                    }
+
+                }
+
+                &.nav-sub-title {
+                  font-size: $b4;
+                  line-height: 1.15;
+                  font-weight: 400;
+                  margin-bottom: $m8;
+                  margin-top: calc(#{$m16} + 2px);
+                }
+
+                a {
+                  color: $white;
+                  font-size: $b4;
+                  font-family: $bodyFont;
+                  line-height: 1.15;
+                  font-weight: 400;
+                  display: block;
+
+                    span {
+                        color: $fishTint1
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+    .footer-blog {
+
+        @media only screen and (min-width: $md-start) {
+          flex: 0 0 clamp(230px, 22.531vw, 314px);
+        }
+
+        @media only screen and (min-width: $lg-start) {
+          flex: 0 0 314px;
+        }
+
+        h3 {
+          font-size: $b3;
+          line-height: 1.1;
+          font-weight: 700;
+          margin-bottom: calc(#{$m24} - 4px);
+          margin-top: $m64;
+          color: rgba(255,255,255,0.5);
+
+            @media only screen and (min-width: $md-start) {
+              margin-top: 0;
+            }
+
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          row-gap: $m32;
+
+            @media only screen and (min-width: $sm-start) {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              column-gap: 30px;
+            }
+
+            @media only screen and (min-width: $md-start) {
+              display: flex;
+              grid-template-columns: unset;
+              column-gap: 0;
+            }
+
+            li a {
+              display: block;
+
+                @media (hover: hover) and (pointer: fine) {
+                  &:hover {
+
+                      .link {
+                        color: $fishTint1;
+                      }
+
+                  }
+                }
+
+            }
+
+        }
+
+        h4 {
+          font-size: 16px;
+          line-height: 1.4;
+        }
+
+        .content {
+          margin: $m24 0 0;
+
+            p {
+              font-size: $b5;
+            }
+
+        }
+
+        .link {
+          margin-top: $m16;
+          color: #fff;
+          font-size: $b5;
+          transition: all $trans2 ease;
+        }
+
+    }
+
+    .footer-legal {
+      padding-bottom: $m80;
+
+        .col > div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+
+            > div {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+
+                > * {
+                  margin-bottom: $m8;
+                }
+
+            }
+
+        }
+
+        a {
+          text-decoration: none;
+          color: rgba(255,255,255,0.5);
+          font-size: $b6;
+          white-space: nowrap;
+        }
+
+        .logo {
+          width: 40px;
+          height: auto;
+          margin-right: $m40;
+        }
+
+        .copyright {
+          margin-right: $m40;
+        }
+
+        .links {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-right: $m40;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            li {
+              margin-bottom: 0;
+              margin-right: $m16;
+                &:last-child {
+                  margin-right: 0;
+                }
+            }
+
+        }
+
+        a.social {
+          color: #fff;
+
+            svg path {
+              fill: #fff;
+              transition: all $trans2 ease;
+            }
+
+            @media (hover: hover) and (pointer: fine) {
+              &:hover {
+
+                svg path {
+                  fill: $fishTint1;
+                  fill-opacity: 1;
+                }
+
+              }
+            }
+
+        }
+
+    }
+
+}

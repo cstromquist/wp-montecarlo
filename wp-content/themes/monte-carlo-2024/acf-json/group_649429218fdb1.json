@@ -1,0 +1,521 @@
+{
+    "key": "group_649429218fdb1",
+    "title": "Related resources",
+    "fields": [
+        {
+            "key": "field_649ba68ff3da4",
+            "label": "Related resources",
+            "name": "comp_related_resources",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_save_meta": 0,
+            "layout": "block",
+            "acfe_seamless_style": 0,
+            "acfe_group_modal": 0,
+            "sub_fields": [
+                {
+                    "key": "field_6494295fe9149",
+                    "label": "(Column 12\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "columns": "12\/12",
+                    "endpoint": 0,
+                    "border": [
+                        "column",
+                        "fields"
+                    ],
+                    "border_endpoint": [
+                        "endpoint"
+                    ]
+                },
+                {
+                    "key": "field_64942922e9148",
+                    "label": "Section title",
+                    "name": "related_resources_section_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_64942971e914a",
+                    "label": "(Column Endpoint)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "endpoint": 1,
+                    "border_endpoint": [
+                        "endpoint"
+                    ],
+                    "columns": "6\/12",
+                    "border": ""
+                },
+                {
+                    "key": "field_64942af1e915b",
+                    "label": "(Column 4\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "columns": "4\/12",
+                    "endpoint": 0,
+                    "border": [
+                        "column",
+                        "fields"
+                    ],
+                    "border_endpoint": [
+                        "endpoint"
+                    ]
+                },
+                {
+                    "key": "field_6494298fe914b",
+                    "label": "Resource 1",
+                    "name": "related_resource_1",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "layout": "block",
+                    "acfe_seamless_style": 0,
+                    "acfe_group_modal": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_649429b3e914c",
+                            "label": "Title",
+                            "name": "related_resource_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_649429f7e914d",
+                            "label": "Description",
+                            "name": "related_resource_description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "default_value": "",
+                            "acfe_wysiwyg_height": 180,
+                            "acfe_wysiwyg_max_height": "",
+                            "acfe_wysiwyg_valid_elements": "",
+                            "acfe_wysiwyg_custom_style": "",
+                            "acfe_wysiwyg_disable_wp_style": 0,
+                            "acfe_wysiwyg_autoresize": 0,
+                            "acfe_wysiwyg_disable_resize": 0,
+                            "acfe_wysiwyg_remove_path": 0,
+                            "acfe_wysiwyg_menubar": 0,
+                            "acfe_wysiwyg_transparent": 0,
+                            "acfe_wysiwyg_merge_toolbar": 0,
+                            "acfe_wysiwyg_custom_toolbar": 0,
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0,
+                            "acfe_wysiwyg_auto_init": 0,
+                            "acfe_wysiwyg_min_height": 300,
+                            "acfe_wysiwyg_toolbar_buttons": []
+                        },
+                        {
+                            "key": "field_64942ab0e914e",
+                            "label": "CTA",
+                            "name": "related_resource_cta",
+                            "aria-label": "",
+                            "type": "acfe_advanced_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "post_type": "",
+                            "taxonomy": ""
+                        }
+                    ],
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large"
+                },
+                {
+                    "key": "field_64942afde915c",
+                    "label": "(Column 4\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "columns": "4\/12",
+                    "endpoint": 0,
+                    "border": [
+                        "column",
+                        "fields"
+                    ],
+                    "border_endpoint": [
+                        "endpoint"
+                    ]
+                },
+                {
+                    "key": "field_64942ad3e914f",
+                    "label": "Resource 2",
+                    "name": "related_resource_2",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "layout": "block",
+                    "acfe_seamless_style": 0,
+                    "acfe_group_modal": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_64942ad3e9152",
+                            "label": "Title",
+                            "name": "related_resource_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_64942ad3e9153",
+                            "label": "Description",
+                            "name": "related_resource_description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "default_value": "",
+                            "acfe_wysiwyg_height": 180,
+                            "acfe_wysiwyg_max_height": "",
+                            "acfe_wysiwyg_valid_elements": "",
+                            "acfe_wysiwyg_custom_style": "",
+                            "acfe_wysiwyg_disable_wp_style": 0,
+                            "acfe_wysiwyg_autoresize": 0,
+                            "acfe_wysiwyg_disable_resize": 0,
+                            "acfe_wysiwyg_remove_path": 0,
+                            "acfe_wysiwyg_menubar": 0,
+                            "acfe_wysiwyg_transparent": 0,
+                            "acfe_wysiwyg_merge_toolbar": 0,
+                            "acfe_wysiwyg_custom_toolbar": 0,
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0,
+                            "acfe_wysiwyg_auto_init": 0,
+                            "acfe_wysiwyg_min_height": 300,
+                            "acfe_wysiwyg_toolbar_buttons": []
+                        },
+                        {
+                            "key": "field_64942ad3e9154",
+                            "label": "CTA",
+                            "name": "related_resource_cta",
+                            "aria-label": "",
+                            "type": "acfe_advanced_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "post_type": "",
+                            "taxonomy": ""
+                        }
+                    ],
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large"
+                },
+                {
+                    "key": "field_64942affe915d",
+                    "label": "(Column 4\/12)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "columns": "4\/12",
+                    "endpoint": 0,
+                    "border": [
+                        "column",
+                        "fields"
+                    ],
+                    "border_endpoint": [
+                        "endpoint"
+                    ]
+                },
+                {
+                    "key": "field_64942ae4e9155",
+                    "label": "Resource 3",
+                    "name": "related_resource_3",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "layout": "block",
+                    "acfe_seamless_style": 0,
+                    "acfe_group_modal": 0,
+                    "sub_fields": [
+                        {
+                            "key": "field_64942ae4e9158",
+                            "label": "Title",
+                            "name": "related_resource_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_64942ae4e9159",
+                            "label": "Description",
+                            "name": "related_resource_description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "default_value": "",
+                            "acfe_wysiwyg_height": 180,
+                            "acfe_wysiwyg_max_height": "",
+                            "acfe_wysiwyg_valid_elements": "",
+                            "acfe_wysiwyg_custom_style": "",
+                            "acfe_wysiwyg_disable_wp_style": 0,
+                            "acfe_wysiwyg_autoresize": 0,
+                            "acfe_wysiwyg_disable_resize": 0,
+                            "acfe_wysiwyg_remove_path": 0,
+                            "acfe_wysiwyg_menubar": 0,
+                            "acfe_wysiwyg_transparent": 0,
+                            "acfe_wysiwyg_merge_toolbar": 0,
+                            "acfe_wysiwyg_custom_toolbar": 0,
+                            "tabs": "all",
+                            "toolbar": "basic",
+                            "media_upload": 0,
+                            "delay": 0,
+                            "acfe_wysiwyg_auto_init": 0,
+                            "acfe_wysiwyg_min_height": 300,
+                            "acfe_wysiwyg_toolbar_buttons": []
+                        },
+                        {
+                            "key": "field_64942ae4e915a",
+                            "label": "CTA",
+                            "name": "related_resource_cta",
+                            "aria-label": "",
+                            "type": "acfe_advanced_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "post_type": "",
+                            "taxonomy": ""
+                        }
+                    ],
+                    "acfe_group_modal_close": 0,
+                    "acfe_group_modal_button": "",
+                    "acfe_group_modal_size": "large"
+                },
+                {
+                    "key": "field_64942b01e915e",
+                    "label": "(Column Endpoint)",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "acfe_column",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_save_meta": 0,
+                    "endpoint": 1,
+                    "border_endpoint": [
+                        "endpoint"
+                    ],
+                    "columns": "6\/12",
+                    "border": ""
+                }
+            ],
+            "acfe_group_modal_close": 0,
+            "acfe_group_modal_button": "",
+            "acfe_group_modal_size": "large"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_form": 0,
+    "acfe_display_title": "",
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1687922416,
+    "acfe_categories": {
+        "acf-component": "Component"
+    }
+}

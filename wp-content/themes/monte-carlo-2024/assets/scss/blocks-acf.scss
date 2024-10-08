@@ -1,0 +1,27 @@
+@import "grid/main";
+@import "partials/variables";
+
+@import "blocks/carousel";
+@import "blocks/case-study";
+@import "blocks/headline";
+@import "blocks/hero";
+@import "blocks/video-embed";
+
+@import "components/banner";
+@import "components/columns-layout";
+@import "components/form-hero";
+@import "components/logo-grid";
+@import "components/media-text";
+@import "components/testimonials";
+
+.wp-block-acf-hero, .wp-block-acf-testimonial-block {
+  max-width: 1400px;
+  
+    .contain {
+      padding-left: 88px;
+      padding-right: 88px;
+      max-width: 840px;
+      margin: auto;
+    }
+  
+}

@@ -1,0 +1,201 @@
+/*************************************
+  Forms styles
+*************************************/
+
+body:not(.wp-admin):not(.wp-customizer) .hbspt-form {
+  
+  input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+    appearance: none;
+    outline: none;
+    border-radius: 0;
+    border: none;
+    background: $sky;
+    color: $text-main;
+    padding: 12px 22px 12px 12px;
+    font-size: $b3;
+    font-family: $bodyFont;
+    
+      &::placeholder {
+        color: $skyShade2;
+        font-size: $b3;
+        
+          
+        
+      }
+      
+      &:focus, &:focus-visible {
+        border: none;
+        outline: none;
+        border-radius: 0;
+        appearance: none;
+      }
+    
+  }
+  
+  .input {
+    
+      ul.inputs-list {
+        margin-top: 8px;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 20px;
+      }
+      
+      .hs-form-checkbox-display {
+        display: flex;
+        align-items: center;
+        column-gap: 6px;
+      }
+    
+  }
+  
+  input.hs-button {
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-family: $titleFont;
+    padding: 14px 24px;
+    font-size: $b1;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    appearance: none;
+    color: $button-text;
+    line-height: 1;
+    z-index: 1;
+    transition: all $trans2 ease;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          color: #fff;
+        }
+      }
+  }
+  
+  .hs-submit {
+    display: inline-block;
+    position: relative;
+    margin-top: $m32;
+    
+      &::before {
+        content: " ";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: $fishTint1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) skewX(-8deg);
+        z-index: -1;
+        transition: all $trans2 ease;
+      }
+      
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          
+          &::before {
+            background: $button-primary-hover;
+            transform: translate(-50%, -50%) skewX(0deg);
+          }
+        }
+      }
+    
+  }
+  
+  ul.hs-error-msgs {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0;
+    
+      li {
+        line-height: 1;
+      }
+    
+      .hs-error-msg {
+        font-size: $b6;
+        color: $seastar;
+      }
+    
+  }
+  
+}
+
+/*************************************
+  Select styles
+*************************************/
+
+.select-wrapper {
+  width: 100%;
+  position: relative;
+	display: block;
+	border: none;
+	background: none;
+	cursor: pointer;
+  font-size: clamp(18px, 1.757vw, 1.757vw);
+  line-height: 1.5;
+  font-family: $bodyFont;
+  font-weight: 400;
+
+    .holder {
+    	display: block;
+    	margin: 0 50px 0 0px;
+    	white-space: nowrap;
+    	overflow: hidden;
+    	cursor: pointer;
+    	position: relative;
+    	z-index: 0;
+    }
+
+    select {
+      width: 100%;
+      height: 100%;
+    	margin: 0;
+    	position: absolute;
+    	z-index: 2;
+    	cursor: pointer;
+    	outline: none;
+    	opacity: 0;
+      -webkit-appearance: menulist-button;
+    }
+
+    .select-icon {
+      width: 20px;
+      height: 12px;
+      position: absolute;
+      right: 0;
+      top: 38%;
+      transform: translateX(-50%);
+
+        svg {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+
+            path {
+              stroke: $black;
+              transition: stroke .3s ease;
+            }
+
+        }
+
+    }
+
+    @media only screen and (min-width: $md-start) {
+
+      &:hover {
+
+        .select-icon svg path {
+        }
+
+      }
+
+    }
+
+}

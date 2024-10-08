@@ -1,0 +1,9 @@
+plugins
+upgrade
+uploads
+uploads-webpc
+mu-plugins
+wp-content/.htaccess
+wp-content/index.php
+wp-content/themes/*
+!wp-content/themes/monte-carlo-2024/

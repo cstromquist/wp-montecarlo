@@ -1,0 +1,176 @@
+.tbc_block-hero {
+  padding-top: calc(var(--header-height) + 60px);
+  padding-bottom: clamp(55px, 6.048vw, 80px);
+  
+    &:not(.is__preview) {
+      width: 100vw;
+      left: 50%;
+      position: relative;
+      transform: translateX(-50%);
+    }
+    
+    //&.is__preview {
+    //  padding-left: 40px;
+    //  padding-right: 40px;
+    //}
+
+    //h1, p, .cta, img {
+    //  opacity: 0;
+    //}
+    h1, p {
+      font-kerning: none;
+      div {
+        clip-path: polygon(0 0, 100% 0, 100% 120%, 0% 120%);
+      }
+    }
+  
+    .text {
+      margin-top: $m24;
+      
+        p {
+          margin-bottom: $m32;
+          
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          
+        }
+      
+    }
+    
+    .img-wrap {
+      margin-top: 50px;
+      
+        @media only screen and (min-width: $sm-start) {
+          margin-top: 0;
+        }
+      
+        &._1x1 {
+          @include imgPadHack(100%);
+          
+            img {
+              object-fit: contain;
+            }
+          
+        }
+        
+        &._3x2 {
+          @include imgPadHack(66.666667%);
+          
+            img {
+              object-fit: contain;
+            }
+          
+        }
+        
+        &._16x9 {
+          @include imgPadHack(56.25%);
+          
+            img {
+              object-fit: contain;
+            }
+          
+        }
+      
+    }
+  
+    .cta {
+      margin-top: $m48;
+      
+        .hbspt-form {
+          max-width: 435px;
+          margin-left: 5px;
+          
+            form {
+              position: relative;
+            }
+            
+            .field, fieldset {
+              width: 100%;
+              max-width: none;
+            }
+            
+            .hs_email .input {
+              width: calc(100% - 145px);
+              height: 56px;
+              position: relative;
+              background: $sky;
+              transform: skewX(-8deg);
+              z-index: 1;
+
+                input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+                  height: 56px;
+                  background: transparent;
+                  font-size: 16px;
+                  transform: skewX(8deg);
+                  
+                    @media only screen and (min-width: $md-start) {
+                      font-size: 22px;
+                    }
+                  
+                }
+              
+            }
+            
+            .hs-submit {
+              position: absolute !important;
+              right: 0 !important;
+              top: 0 !important;
+              margin: 0 !important;
+              z-index: 2;
+              height: 56px !important;
+              
+                input.hs-button {
+                  width: 152px;
+                  height: 56px;
+                  font-size: 18px;
+                  padding: 0 10px;
+                  
+                    @media only screen and (min-width: $md-start) {
+                      width: 178px;
+                      font-size: $b3;
+                    }
+                  
+                }
+              
+            }
+          
+        }
+      
+    }
+    
+    &.layout-center {
+      text-align: center;
+      padding-bottom: clamp(55px, 7.048vw, 116px);
+      
+        @media only screen and (min-width: $sm-start) {
+          padding-top: calc(var(--header-height) + 80px);
+        }
+      
+        .text {
+          
+            @media only screen and (min-width: $sm-start) {
+              width: 84%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+          
+        }
+        
+        .cta .hbspt-form {
+          margin: auto;
+        }
+      
+    }
+    
+    &.layout-right {
+      
+      @media only screen and (min-width: $sm-start) {
+        .row {
+          flex-direction: row-reverse;
+        }
+      }
+
+    }
+  
+}

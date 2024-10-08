@@ -1,0 +1,84 @@
+.post-type-archive-press {
+  
+  .press-row {
+    row-gap: $m64;
+    padding-top: $m104;
+    padding-bottom: $m104;
+  }
+  
+  .press-card {
+    height: 100%;
+    
+      >a {
+        display: block;
+        position: relative;
+        height: 100%;
+        transition: all $trans2 ease;
+        
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              transform: translateY(-6px);
+              
+                .faux-a {
+                  color: #fff;
+                  text-decoration: none;
+
+                  &::before {
+                    background: $button-primary-hover;
+                    transform: translate(-50%, -50%) skewX(0deg);
+                  }
+                }
+              
+            }
+          }
+        
+          >div {
+            padding: $m32;
+            box-shadow: 10px 10px 20px 0px rgba(0, 33, 53, 0.15);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            
+              .image {
+                width: 40%;
+                max-width: 206px;
+                margin-bottom: $m24;
+                display: inline-flex;
+                align-items: center;
+                
+                  @media only screen and (min-width: $md-start) {
+                    width: 68%;
+                  }
+                
+                  img {
+                    max-height: 50px;
+                  }
+                
+              }
+            
+              .press-date {
+                margin-top: calc(#{$m16} - 3px);
+                font-size: $b4;
+              }
+            
+              .faux-a {
+                margin-top: $m32;
+              }
+            
+          }
+        
+      }
+    
+  }
+  
+  .press-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $m104;
+    padding-bottom: $m64;
+    border-bottom: 1px solid rgba($deepSea, 0.25);
+  }
+  
+}

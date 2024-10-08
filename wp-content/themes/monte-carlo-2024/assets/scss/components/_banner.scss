@@ -1,0 +1,128 @@
+.comp_banner-cta {
+  padding: $m40 $m32 $m56;
+  //padding-top: $m40;
+  //padding-bottom: $m56;
+  //@include contain();
+
+  @media only screen and (min-width: $md-start) {
+    padding-top: $m64;
+    padding-bottom: $m64;
+    padding-left: $m128;
+    padding-right: $m128;
+  }
+  &.bg_seastar {
+    color: $text-main;
+    
+      a.btn.btn-lg {
+        color: #fff;
+        
+          &::before {
+            background: $ocean;
+          }
+
+          @media (hover: hover) and (pointer: fine) {
+            &:hover {
+              color: #fff;
+              text-decoration: none;
+
+              &::before {
+                background: $oceanShade2;
+                transform: translate(-50%, -50%) skewX(0deg);
+              }
+            }
+          }
+        
+      }
+    
+  }
+  
+  &.bg_ocean {
+    color: #fff;
+  }
+  
+  .banner-wrap {
+    display: flex;
+    flex-direction: column;
+    
+      @media only screen and (min-width: $sm-start) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+  }
+  
+  &.has-image {
+    
+    @media only screen and (min-width: $md-start) {
+      padding-left: $m80;
+      padding-right: $m80;
+    }
+    
+    .banner-wrap {
+
+      @media only screen and (min-width: $sm-start) {
+        justify-content: flex-start;
+      }
+
+    }
+    
+    .img {
+      width: 100%;
+      max-width: 165px;
+      margin-right: $m64;
+      margin-bottom: $m24;
+      @include imgPadHack(100%);
+      @media only screen and (min-width: $sm-start) {
+        margin-bottom: 0;
+      }
+    }
+    
+  }
+  
+  .content {
+    p.h3 {
+      margin-top: 0;
+    }
+    p:not(.h3) {
+      margin-top: $m24;
+    }
+  }
+  
+  .cta-container {
+    margin-top: $m48;
+    @media only screen and (min-width: $sm-start) {
+      display: flex;
+      justify-content: flex-end;
+      white-space: nowrap;
+      margin-left: $m64;
+      margin-top: 0;
+    }
+  }
+  
+}
+
+//.banner-block {
+//  background-color: #E4E7EA;
+//  padding: $m40 $m32 $m56;
+//  margin-top: $m64;
+//  margin-bottom: $m64;
+//  &:last-child {
+//    // this is to override the margin-bottom:0 applied to the last block on the page
+//    margin-bottom: $m64 !important;
+//  }
+//  @media only screen and (min-width: $md-start) {
+//    padding-left: 0;
+//    padding-right: 0;
+//  }
+//  h2 {
+//    margin-bottom: $m24;
+//    @media only screen and (min-width: $sm-start) {
+//      margin-bottom: 0;
+//    }
+//  }
+//  p{
+//    margin-top: $m16;
+//  }
+  
+//}

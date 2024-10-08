@@ -1,0 +1,193 @@
+.block-carousel-block, .post-copy .block-carousel-block {
+  position: relative;
+  color: $deepSeaShade1;
+  padding-top: $m80;
+  padding-bottom: $m80;
+  .inner-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  h3 {
+    color: $text-main;
+    margin-bottom: $m24;
+    line-height: 1.1;
+  }
+
+  .content-container {
+    position: relative;
+  }
+
+  .indicator-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 100%;
+    background-color: #F4F6F8;
+    display: none;
+    @media only screen and (min-width: $sm-start) {
+      display: block;
+    }
+    .indicator {
+      width: 100%; 
+      height: 30px;
+      background-color: #E4E7EA;
+      display: none;
+    }
+  }
+
+  .spacer {
+    width: 50%;
+    flex-shrink: 0;
+    position: relative;
+    @media only screen and (min-width: $sm-start) {
+      flex-shrink: 0.25;
+    }
+    @media only screen and (min-width: $md-start) {
+      flex-shrink: 0;
+    }
+  }
+
+  .img {
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-top: $m40;
+    &:after {
+      content: " ";
+      display: block;
+      padding-bottom: 66.56%;
+    }
+    @media only screen and (min-width: $sm-start) {
+      margin-top: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      opacity: 1;
+      visibility: visible;
+      @media only screen and (min-width: $sm-start) {
+        opacity: 0;
+        visibility: hidden;
+        &:first-of-type {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .item-list-container {
+    width: 100%;
+    @media only screen and (min-width: $sm-start) {
+      padding-left: calc(1/12 * 100%);
+    }
+  }
+
+  ul.list {
+    list-style: none;
+    padding-left: 0;
+    @media only screen and (min-width: $sm-start) {
+      padding-left: 30px !important;
+    }
+    li {
+      margin-bottom: $m16;
+      @media only screen and (min-width: $sm-start) {
+        opacity: 0.5;
+        &:first-of-type {
+          .content {
+            height: auto;
+          }
+        }
+      }
+      &.active {
+        opacity: 1;
+        button:before {
+          opacity: 1;
+        }
+      }
+      button {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+        margin-bottom: $m16;
+        @media only screen and (min-width: $sm-start) {
+          margin-bottom: 0;
+        }
+        &:before {
+          content: '';
+          width: 22px;
+          height: 100%;
+          background-color: #E4E7EA;
+          position: absolute;
+          transform: translateX(calc(-100% - 8px));
+          opacity: 0;
+          display: none;
+          @media only screen and (min-width: $sm-start) {
+            display: block;
+            transition: all $trans2 ease;
+          }
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+        .content {
+          margin-bottom: 0;
+        }
+        button {
+          @media only screen and (min-width: $sm-start) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  
+  .content {
+    font-size: $b1;
+    margin-bottom: $m48;
+    height: auto;
+    @media only screen and (min-width: $sm-start) {
+      height: 0;
+      overflow: hidden;
+      margin-bottom: $m8;
+    }
+    .img {
+      @media only screen and (min-width: $sm-start) {
+        display: none;
+      }
+    }
+    >*:first-child {
+        margin-top: $m8;
+    }
+    p {
+      line-height: 1.2;
+      margin-bottom: $m16;
+    }
+    .button-wrap {
+      margin-top: $m8;
+      margin-bottom: $m16;
+    }
+  }
+  
+  &.left .inner-container {
+    @media only screen and (min-width: $sm-start) {
+      flex-direction: row-reverse;
+    }
+    .item-list-container {
+      @media only screen and (min-width: $sm-start) {
+        padding-left: 0;
+        padding-right: calc(1/12 * 100%);
+      }
+    }
+  }
+}

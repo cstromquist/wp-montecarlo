@@ -1,0 +1,60 @@
+.block-headline {
+  color: $deepSeaShade1;
+  padding-top: $m80;
+  padding-bottom: $m80;
+  h2 {
+    margin-top: 0;
+    margin-bottom: $m32;
+  }
+  .content {
+    &.left {
+      text-align: left;
+      
+        @media only screen and (min-width: $sm-start) {
+          //padding-right: 25%;
+          max-width: 75%;
+        }
+        @media only screen and (min-width: $md-start) {
+          //padding-right: 32%;
+          max-width: 70%;
+        }
+        @media only screen and (min-width: $lg-start) {
+          //padding-right: 40%;
+          max-width: 65%;
+        }
+      
+    }
+    &.center {
+      text-align: center;
+      margin: 0 auto;
+      
+        @media only screen and (min-width: $sm-start) {
+          max-width: 83.3333%;
+        }
+      
+    }
+  }
+  .img {
+    margin-top: $m48;
+    //@include imgPadHack(66.666667%);
+    
+      img {
+        width: 100%;
+        height: auto;
+      }
+    
+  }
+  p {
+    margin-bottom: $m32;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  .button-wrap {
+    margin-top: $m24;
+  }
+  .cta-wrapper {
+    text-align: center;;
+    margin-top: $m64;
+  }
+}
