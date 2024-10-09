@@ -1,0 +1,9 @@
+.notch:after {
+  content: "";
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  height: 30px;
+  bottom: -30px;
+  padding-bottom: 60px;
+}

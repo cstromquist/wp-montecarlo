@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "settings": {
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "\"ClashDisplay\", serif",
+          "slug": "title",
+          "name": "Title"
+        },
+        {
+          "fontFamily": "Satoshi, sans-serif",
+          "slug": "body",
+          "name": "body"
+        }
+      ],
+      "customFontSize": false,
+      "dropCap": false,
+      "fontWeight": false,
+      "fontStyle": false,
+      "textTransform": false,
+      "textDecoration": false
+    },
+    "color": {
+      "custom": false,
+      "customGradient": false,
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#E08D73",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#ee964b",
+          "name": "Secondary"
+        },
+        {
+          "slug": "dark",
+          "color": "#4d4d4d",
+          "name": "Dark"
+        },
+        {
+          "slug": "light",
+          "color": "#f9f9f9",
+          "name": "Light"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "black",
+          "color": "#333333",
+          "name": "Black"
+        }
+      ]
+    }
+  }
+}

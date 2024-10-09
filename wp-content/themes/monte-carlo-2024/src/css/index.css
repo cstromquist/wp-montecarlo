@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Header */
+@import './modules/header.css';
+
+/* Notch */
+@import './modules/notch.css';
