@@ -120,4 +120,11 @@ require_once( 'functions/func-debug.php' );
   * *******************************************************/
 require_once( 'functions/func-gutenberg.php' );
 
+/***************************************************************
+  *
+  TAILWIND
+  *
+  * *******************************************************/
+require_once( 'functions/func-tailwind.php' );
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
