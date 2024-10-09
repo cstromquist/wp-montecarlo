@@ -3,6 +3,7 @@ upgrade
 uploads
 uploads-webpc
 mu-plugins
+node_modules
 wp-content/.htaccess
 wp-content/index.php
 wp-content/themes/*
