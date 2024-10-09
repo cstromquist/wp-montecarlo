@@ -1,0 +1,20 @@
+{
+    "name": "acf/mc-hero",
+    "title": "MC Hero",
+    "description": "Monte Carlo Hero block for pages",
+    "category": "monte-carlo",
+    "icon": "align-full-width",
+    "style": "file:./mc-hero.css",
+    "apiVersion": 2,
+    "keywords": [
+        "hero",
+        "header"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
