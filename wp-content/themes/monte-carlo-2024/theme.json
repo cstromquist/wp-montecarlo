@@ -4,7 +4,7 @@
     "typography": {
       "fontFamilies": [
         {
-          "fontFamily": "\"ClashDisplay\", serif",
+          "fontFamily": "\"Capito\", serif",
           "slug": "title",
           "name": "Title"
         },

@@ -589,155 +589,254 @@ video {
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+
+.m-0 {
+  margin: 0px !important;
 }
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.box-content {
+  box-sizing: content-box !important;
 }
 
 .block {
-  display: block;
+  display: block !important;
 }
 
 .flex {
-  display: flex;
+  display: flex !important;
+}
+
+.h-auto {
+  height: auto !important;
 }
 
 .min-h-\[600px\] {
-  min-height: 600px;
+  min-height: 600px !important;
+}
+
+.min-h-\[700px\] {
+  min-height: 700px !important;
+}
+
+.w-6\/12 {
+  width: 50% !important;
+}
+
+.w-\[507px\] {
+  width: 507px !important;
+}
+
+.w-full {
+  width: 100% !important;
+}
+
+.w-7\/12 {
+  width: 58.333333% !important;
+}
+
+.w-5\/12 {
+  width: 41.666667% !important;
 }
 
 .max-w-screen-xl {
-  max-width: 1280px;
+  max-width: 1280px !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse !important;
 }
 
 .flex-col {
-  flex-direction: column;
+  flex-direction: column !important;
+}
+
+.items-center {
+  align-items: center !important;
+}
+
+.gap-8 {
+  gap: 2rem !important;
+}
+
+.gap-6 {
+  gap: 1.5rem !important;
+}
+
+.gap-4 {
+  gap: 1rem !important;
+}
+
+.gap-2 {
+  gap: 0.5rem !important;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+  --tw-space-x-reverse: 0 !important;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse)) !important;
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse))) !important;
 }
 
 .rounded-full {
-  border-radius: 9999px;
+  border-radius: 9999px !important;
 }
 
 .border {
-  border-width: 1px;
+  border-width: 1px !important;
 }
 
 .border-\[\#eda600\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(237 166 0 / var(--tw-border-opacity));
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(237 166 0 / var(--tw-border-opacity)) !important;
 }
 
 .bg-\[\#eda600\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(237 166 0 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(237 166 0 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops)) !important;
 }
 
 .from-\[\#0073b4\] {
-  --tw-gradient-from: #0073b4 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 115 180 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-from: #0073b4 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(0 115 180 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-\[\#005180\] {
-  --tw-gradient-to: #005180 var(--tw-gradient-to-position);
+  --tw-gradient-to: #005180 var(--tw-gradient-to-position) !important;
 }
 
 .px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
 }
 
 .px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 .py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
 }
 
 .py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.pt-8 {
+  padding-top: 2rem !important;
+}
+
+.pb-28 {
+  padding-bottom: 7rem !important;
+}
+
+.pt-28 {
+  padding-top: 7rem !important;
 }
 
 .text-center {
-  text-align: center;
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
 
 .align-middle {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 .text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
 }
 
 .text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
+  font-size: 3.75rem !important;
+  line-height: 1 !important;
+}
+
+.text-5xl {
+  font-size: 3rem !important;
+  line-height: 1 !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
+.font-normal {
+  font-weight: 400 !important;
 }
 
 .text-\[\#1d4b67\] {
-  --tw-text-opacity: 1;
-  color: rgb(29 75 103 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(29 75 103 / var(--tw-text-opacity)) !important;
 }
 
 .text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:text-\[\#eda600\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(237 166 0 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(237 166 0 / var(--tw-text-opacity)) !important;
 }
 
 .hover\:text-\[white\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 @media (min-width: 1024px) {
   .lg\:pt-8 {
-    padding-top: 2rem;
+    padding-top: 2rem !important;
   }
 
-  .lg\:pt-\[100px\] {
-    padding-top: 100px;
+  .lg\:pt-\[200px\] {
+    padding-top: 200px !important;
   }
 }
 
