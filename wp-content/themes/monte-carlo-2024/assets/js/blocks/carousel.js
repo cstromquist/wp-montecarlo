@@ -4,7 +4,7 @@ const carouselBlock = (gsap) => {
 
   if( carousels.length ) {
     carousels.forEach( (carousel) => {
-      let buttons = carousel.querySelectorAll('button');
+      let buttons = carousel.querySelectorAll('.carousel-item');
       buttons.forEach( (button) => {
         button.addEventListener('click', (event)=> {
           
@@ -14,14 +14,14 @@ const carouselBlock = (gsap) => {
             let slideIndex = carouselItem.getAttribute('data-slide');
 
             // Get the image container
-            let imageContainer = carouselItem.closest('.inner-container').querySelector('.spacer .img');
+            let imageContainer = carouselItem.closest('.inner-container').querySelector('.img');
             //Find the associated image
             let image = imageContainer.querySelector('img[data-slide="' + slideIndex + '"]');
 
             // If the carousel item isn't already open
             if( !carouselItem.classList.contains('active') ) {
               //let prevItem = carouselItem.parentElement.querySelector('li.active');
-              let prevItems = carouselItem.parentElement.querySelectorAll('li.active');
+              let prevItems = carouselItem.parentElement.querySelectorAll('.active');
               let prevImages = imageContainer.querySelectorAll('img.active');
               //Foreach item with the active class
               let prevItemContent;

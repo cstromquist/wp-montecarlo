@@ -17,6 +17,7 @@ add_action( 'init', 'register_acf_blocks' );
 function register_acf_blocks() {
 	register_block_type( __DIR__ . '/../template-parts/blocks/mc-hero/block.json' );
 	register_block_type( __DIR__ . '/../template-parts/blocks/mc-logos/block.json' );
+	register_block_type( __DIR__ . '/../template-parts/blocks/mc-carousel/block.json' );
 }
 
 add_filter( 'block_categories_all', 'example_block_category', 10, 2);
