@@ -747,6 +747,10 @@ video {
   border-width: 1px !important;
 }
 
+.border-solid {
+  border-style: solid !important;
+}
+
 .border-\[\#eda600\] {
   --tw-border-opacity: 1 !important;
   border-color: rgb(237 166 0 / var(--tw-border-opacity)) !important;

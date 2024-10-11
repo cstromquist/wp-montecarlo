@@ -29,8 +29,8 @@ $image               = !empty(get_field('image')) ? get_field('image') : '';
       <h1 class="text-6xl leading-[70px] text-white"><?php echo nl2br($heading); ?></h1>
       <h2 class="text-xl font-normal text-white lg:pt-6 m-0"><?php echo nl2br($subheading); ?></h2>
       <div class="flex align-middle py-8 space-x-6 justify-<?php echo $justify_hash[$alignment] ?>">
-        <a href="/request-a-demo" class="bg-[#eda600] px-8 py-2 text-white rounded-full text-[#1d4b67] hover:text-[white]">Take a product tour</a>
-        <a href="#" class="border-[#eda600] border px-10 py-2 text-white hover:text-[#eda600] rounded-full">Request a demo</a>
+        <a href="/request-a-demo" class="bg-[#eda600] px-8 py-2 rounded-full text-[#1d4b67] hover:text-[white]">Take a product tour</a>
+        <a href="#" class="border-[#eda600] border border-solid px-10 py-2 text-white hover:text-[#eda600] rounded-full">Request a demo</a>
       </div>
     </div>
     <?php if ($image && $alignment !== 'center') : ?>
