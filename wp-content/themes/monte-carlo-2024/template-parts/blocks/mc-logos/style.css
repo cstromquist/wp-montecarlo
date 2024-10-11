@@ -1,0 +1,9 @@
+.mc-logos:after {
+  content: "";
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  height: 30px;
+  bottom: -40px;
+  padding-bottom: 60px;
+}

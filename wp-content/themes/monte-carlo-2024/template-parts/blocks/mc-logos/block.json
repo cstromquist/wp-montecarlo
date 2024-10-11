@@ -1,0 +1,18 @@
+
+{
+    "name": "acf/mc-logos",
+    "title": "MC Logos",
+    "description": "Monte Carlo Logos block for pages",
+    "category": "monte-carlo",
+    "icon": "align-full-width",
+    "style": "file:./style.css",
+    "apiVersion": 2,
+    "keywords": [
+        "hero",
+        "header"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    }
+}

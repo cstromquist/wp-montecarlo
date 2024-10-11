@@ -1,5 +1,8 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
+/*!********************************!*\
+  !*** ./assets/scss/style.scss ***!
+  \********************************/
 // extracted by mini-css-extract-plugin
 /******/ })()
 ;

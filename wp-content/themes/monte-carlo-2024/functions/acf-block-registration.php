@@ -16,6 +16,7 @@ add_action( 'init', 'register_acf_blocks' );
 
 function register_acf_blocks() {
 	register_block_type( __DIR__ . '/../template-parts/blocks/mc-hero/block.json' );
+	register_block_type( __DIR__ . '/../template-parts/blocks/mc-logos/block.json' );
 }
 
 add_filter( 'block_categories_all', 'example_block_category', 10, 2);
@@ -33,6 +34,10 @@ function example_block_category( $categories, $post ) {
 	return $categories;
 }
 
+// function block_styles() {
+// 	wp_enqueue_style( 'block_styles', get_template_directory_uri() . '/template-parts/blocks/mc-logos/style.css', array() );
+// }
+// add_action( 'wp_enqueue_scripts', 'block_styles' );
 /***************************************************************
   *
   SETUP TEMPLATE FOR PAGES THAT USES HERO BLOCK
