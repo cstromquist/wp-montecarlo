@@ -24,13 +24,13 @@ $image               = !empty(get_field('image')) ? get_field('image') : '';
 
 ?>
 <div class="bg-gradient-to-b from-[#0073b4] to-[#005180]">
-  <div class="flex lg:flex-row flex-col md:min-h-[700px] container mx-auto px-4 items-center gap-2 pt-28 <?php echo esc_html($flex_hash[$alignment]); ?>">
+  <div class="flex lg:flex-row flex-col md:min-h-[800px] container mx-auto px-4 items-center gap-2 pt-36 lg:pt-16 <?php echo esc_html($flex_hash[$alignment]); ?>">
     <div class="flex flex-col lg:w-7/12 text-center lg:text-left pl-6">
-      <h1 class="text-6xl leading-[70px] text-white"><?php echo nl2br($heading); ?></h1>
-      <h2 class="text-xl font-normal text-white lg:pt-6 m-0"><?php echo nl2br($subheading); ?></h2>
+      <h1 class="text-5xl mb-8 lg:mb-0 lg:text-6xl lg:leading-[70px] text-white"><?php echo nl2br($heading); ?></h1>
+      <h2 class="text-[24px] font-sans font-normal text-white lg:pt-6 m-0"><?php echo nl2br($subheading); ?></h2>
       <div class="flex align-middle py-8 space-x-6 justify-center lg:justify-<?php echo $justify_hash[$alignment] ?>">
-        <a href="/request-a-demo" class="bg-[#eda600] px-8 py-2 rounded-full text-[#1d4b67] hover:text-[white]">Take a product tour</a>
-        <a href="#" class="border-[#eda600] border border-solid px-10 py-2 text-white hover:text-[#eda600] rounded-full">Request a demo</a>
+        <a href="/request-a-demo" class="text-xs sm:text-sm md:text-xl font-serif bg-secondary px-8 py-2 rounded-full text-[#1d4b67] hover:text-white">Take a product tour</a>
+        <a href="#" class="text-xs sm:text-sm md:text-xl font-serif border-secondary border border-solid px-10 py-2 text-white hover:text-secondary rounded-full">Request a demo</a>
       </div>
     </div>
     <?php if ($image && $alignment !== 'center') : ?>
