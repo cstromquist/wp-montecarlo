@@ -13,3 +13,7 @@
     height: auto;
   }
 }
+
+.card-with-copy {
+  @apply container mx-auto shadow-2xl px-8;
+}

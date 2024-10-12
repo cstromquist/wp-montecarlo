@@ -24,6 +24,7 @@ module.exports = {
     'flex-row-reverse',
     'lg:flex-row-reverse',
     'lg:flex-row',
+    'lg:text-center',
   ],
   plugins: [],
   module: {},

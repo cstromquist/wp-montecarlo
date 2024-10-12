@@ -1,7 +1,7 @@
 
 <?php
 /*
- * Template Name: Home 2024 template
+ * Template Name: 2024 Home Page template
  * Template Post Type: page
  */
 ?>

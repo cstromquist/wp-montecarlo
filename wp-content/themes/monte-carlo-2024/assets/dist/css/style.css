@@ -2286,11 +2286,9 @@ button {
   z-index: 999;
   background-color: #ffffff;
   transition: transform 0.3s ease;
-}
-@media only screen and (min-width: 1280px) {
-  #header {
-    background-color: transparent;
-  }
+  /* @media only screen and (min-width: $lg-start) { */
+  /*   background-color: transparent; */
+  /* } */
 }
 #header.loaded {
   transform: translateY(0);

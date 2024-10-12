@@ -8,7 +8,7 @@
 
 $carousel_items = !empty(get_field('carousel_items')) ? get_field('carousel_items') : '';
 ?>
-<div class="container mx-auto flex flex-col mt-14 block-carousel-block mc-carousel">
+<div class="container mx-auto flex flex-col mt-10 pt-8 block-carousel-block mc-carousel">
   <div class="flex flex-row justify-between items-center inner-container">
     <div class="flex flex-col w-1/2 text-primary [&>div>p]:text-gray pr-16">
       <?php foreach ($carousel_items as $i => $item) : ?>
