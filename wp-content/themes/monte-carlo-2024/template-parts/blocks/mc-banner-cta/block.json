@@ -1,15 +1,14 @@
-
 {
-    "name": "acf/mc-logos",
-    "title": "MC Logos",
-    "description": "Monte Carlo Logos block for pages",
+    "name": "acf/mc-banner-cta",
+    "title": "MC Banner CTA",
+    "description": "Monte Carlo banner and cta block for pages",
     "category": "monte-carlo",
     "icon": "align-full-width",
     "style": "file:./style.css",
     "apiVersion": 2,
     "keywords": [
-        "logos",
-        "brands"
+        "banner",
+        "cta"
     ],
     "acf": {
         "mode": "preview",

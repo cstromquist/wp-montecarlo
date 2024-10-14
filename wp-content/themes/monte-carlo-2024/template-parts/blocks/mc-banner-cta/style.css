@@ -1,0 +1,16 @@
+.mc-quote {
+  @apply border border-solid border-white rounded-md p-4;
+}
+
+.mc-quote:before {
+  @apply absolute block w-14 h-14 bg-tertiary -top-6 -left-8;
+  content: "";
+  background: url("../../img/quote.png") no-repeat center;
+  z-index: 2;
+}
+
+.mc-quote:after {
+  @apply absolute block w-16 h-16 bg-tertiary -top-8 -left-10;
+  content: "";
+  z-index: 1;
+}

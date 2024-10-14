@@ -2,18 +2,22 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/**
+ * Import block component styles
+ */
+@import "../../template-parts/blocks/mc-carousel/style.css";
+@import "../../template-parts/blocks/mc-banner-cta/style.css";
+
 @layer components {
-  .mc-carousel .carousel-item.active {
-    border: 1px solid theme('colors.secondary');
-    border-radius: 4px;
-    background: theme('colors.white');
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  .mc-carousel .carousel-item.active .content {
-    height: auto;
+  .mc-btn-primary {
+    @apply text-xs sm:text-sm md:text-xl font-serif bg-secondary px-8 py-2 rounded-full text-primary hover:text-white;
   }
 }
 
-.card-with-copy {
-  @apply container mx-auto shadow-2xl px-8;
+.mc-media-text-block {
+  @apply container shadow-2xl px-8;
+}
+
+.mc-3-col {
+  @apply grid grid-cols-3 gap-4;
 }

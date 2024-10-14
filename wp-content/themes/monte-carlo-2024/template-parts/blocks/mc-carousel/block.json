@@ -1,4 +1,3 @@
-
 {
     "name": "acf/mc-carousel",
     "title": "MC Carousel",
@@ -8,8 +7,8 @@
     "style": "file:./style.css",
     "apiVersion": 2,
     "keywords": [
-        "hero",
-        "header"
+        "carousel",
+        "slider"
     ],
     "acf": {
         "mode": "preview",

@@ -36,6 +36,12 @@
           "name": "Secondary"
         },
         {
+          "slug": "tertiary",
+          "color": "#0171b1",
+          "name": "Tertiary"
+
+        },
+        {
           "slug": "dark",
           "color": "#4d4d4d",
           "name": "Dark"
