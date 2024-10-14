@@ -629,6 +629,55 @@ video {
   }
 }
 
+.mc-block-link {
+  position: relative;
+  cursor: pointer;
+  font-family: Capito, serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(29 75 103 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+.mc-block-link:hover {
+  --tw-text-opacity: 1;
+  color: rgb(237 166 0 / var(--tw-text-opacity));
+}
+
+.mc-block-link {
+  &:after {
+    position: absolute;
+  }
+  &:after {
+    right: -0.75rem;
+  }
+  &:after {
+    bottom: 0.375rem;
+  }
+  &:after {
+    display: block;
+  }
+  &:after {
+    height: 9px;
+  }
+  &:after {
+    width: 100%;
+  }
+  &:after {
+    width: 5px;
+  }
+  &:after {
+    --tw-content: '';
+    content: var(--tw-content);
+  }
+  &:after {
+    content: '';
+    background: url("../../img/caret-right-primary.png") no-repeat center;
+  }
+}
+
 .sr-only {
   position: absolute !important;
   width: 1px !important;
@@ -653,6 +702,10 @@ video {
   position: relative !important;
 }
 
+.-bottom-3 {
+  bottom: -0.75rem !important;
+}
+
 .bottom-0 {
   bottom: 0px !important;
 }
@@ -665,14 +718,6 @@ video {
   right: 5rem !important;
 }
 
-.-bottom-2 {
-  bottom: -0.5rem !important;
-}
-
-.-bottom-3 {
-  bottom: -0.75rem !important;
-}
-
 .m-0 {
   margin: 0px !important;
 }
@@ -680,6 +725,19 @@ video {
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+.my-6 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mb-16 {
+  margin-bottom: 4rem !important;
 }
 
 .mb-2 {
@@ -698,12 +756,16 @@ video {
   margin-top: 2.5rem !important;
 }
 
-.mt-8 {
-  margin-top: 2rem !important;
+.mt-2 {
+  margin-top: 0.5rem !important;
 }
 
 .mt-4 {
   margin-top: 1rem !important;
+}
+
+.mt-8 {
+  margin-top: 2rem !important;
 }
 
 .box-content {
@@ -736,6 +798,10 @@ video {
 
 .w-5\/12 {
   width: 41.666667% !important;
+}
+
+.w-7\/12 {
+  width: 58.333333% !important;
 }
 
 .w-auto {
@@ -800,6 +866,10 @@ video {
   border-radius: 9999px !important;
 }
 
+.rounded-md {
+  border-radius: 0.375rem !important;
+}
+
 .border {
   border-width: 1px !important;
 }
@@ -854,6 +924,16 @@ video {
   padding-right: 2.5rem !important;
 }
 
+.px-12 {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+
+.px-2 {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+
 .px-4 {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
@@ -869,13 +949,12 @@ video {
   padding-bottom: 2rem !important;
 }
 
-.px-2 {
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem !important;
+}
+
+.pb-12 {
+  padding-bottom: 3rem !important;
 }
 
 .pr-16 {
@@ -947,19 +1026,24 @@ video {
   font-style: italic !important;
 }
 
+.text-gray {
+  --tw-text-opacity: 1 !important;
+  color: rgb(91 91 91 / var(--tw-text-opacity)) !important;
+}
+
 .text-primary {
   --tw-text-opacity: 1 !important;
   color: rgb(29 75 103 / var(--tw-text-opacity)) !important;
 }
 
-.text-white {
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
-}
-
 .text-secondary {
   --tw-text-opacity: 1 !important;
   color: rgb(237 166 0 / var(--tw-text-opacity)) !important;
+}
+
+.text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .shadow-xl {
@@ -1027,37 +1111,37 @@ video {
   z-index: 1;
 }
 
-.mc-media-text-block {
+.mc-drop-shadow-block {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
 
 @media (min-width: 640px) {
-  .mc-media-text-block {
+  .mc-drop-shadow-block {
     max-width: 640px;
   }
 }
 
 @media (min-width: 768px) {
-  .mc-media-text-block {
+  .mc-drop-shadow-block {
     max-width: 768px;
   }
 }
 
 @media (min-width: 1024px) {
-  .mc-media-text-block {
+  .mc-drop-shadow-block {
     max-width: 1024px;
   }
 }
 
 @media (min-width: 1200px) {
-  .mc-media-text-block {
+  .mc-drop-shadow-block {
     max-width: 1200px;
   }
 }
 
-.mc-media-text-block {
+.mc-drop-shadow-block {
   padding-left: 2rem;
   padding-right: 2rem;
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -1093,10 +1177,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible !important;
-  }
-
   .md\:left-0 {
     left: 0px !important;
   }
