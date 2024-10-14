@@ -16,7 +16,7 @@
                     $footer_cta = get_field( 'footer_cta_link', 'option' );
                     if ( $footer_cta ) :
                   ?>
-                    <a class="btn btn-lg" href="<?php echo esc_url( $footer_cta['url'] ); ?>" target="<?php echo $footer_cta['target']; ?>" ><?php echo esc_html( $footer_cta['title'] ); ?></a>
+                    <a class="btn btn-md" href="<?php echo esc_url( $footer_cta['url'] ); ?>" target="<?php echo $footer_cta['target']; ?>" ><?php echo esc_html( $footer_cta['title'] ); ?></a>
                   <?php 
                       endif;
                       

@@ -11,6 +11,9 @@
 @layer components {
   .mc-btn-primary {
     @apply text-xs sm:text-sm md:text-xl font-serif bg-secondary px-8 py-2 rounded-full text-primary hover:text-white;
+    &:hover {
+      @apply text-white;
+    }
   }
   .mc-block-link {
     @apply text-lg underline relative text-primary hover:text-secondary cursor-pointer tracking-tight font-serif;

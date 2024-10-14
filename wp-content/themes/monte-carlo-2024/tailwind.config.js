@@ -25,6 +25,16 @@ module.exports = {
         '2xl': '1200px',
       },
     },
+    'container-wide': {
+      center: true,
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1400px',
+        '2xl': '1400px',
+      },
+    }
   },
   safelist: [
     'lg:justify-start',
@@ -40,6 +50,7 @@ module.exports = {
     'p-48',
     'pb-12',
     'px-12',
+    'py-12',
     'w-7/12',
     'rounded-md',
     'mb-0',
@@ -49,6 +60,7 @@ module.exports = {
     'text-gray',
     'text-lg',
     'mc-block-link',
+    'min-h-[700px]',
   ],
   plugins: [],
   module: {},

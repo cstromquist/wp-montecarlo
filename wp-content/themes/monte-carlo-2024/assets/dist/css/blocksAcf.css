@@ -1008,7 +1008,7 @@
 ******************************************/
 .block-carousel-block, .post-copy .block-carousel-block {
   position: relative;
-  color: #003453;
+  color: #1d4b67;
   padding-top: clamp(60px, 5.857vw, 80px);
   padding-bottom: clamp(60px, 5.857vw, 80px);
 }
@@ -1018,7 +1018,7 @@
   flex-direction: row;
 }
 .block-carousel-block h3, .post-copy .block-carousel-block h3 {
-  color: #003453;
+  color: #1d4b67;
   margin-bottom: clamp(21px, 1.757vw, 24px);
   line-height: 1.1;
 }
@@ -1313,7 +1313,7 @@
 }
 
 .block-headline {
-  color: #003453;
+  color: #1d4b67;
   padding-top: clamp(60px, 5.857vw, 80px);
   padding-bottom: clamp(60px, 5.857vw, 80px);
 }
@@ -1572,7 +1572,7 @@
   }
 }
 .comp_banner-cta.bg_seastar {
-  color: #003453;
+  color: #1d4b67;
 }
 .comp_banner-cta.bg_seastar a.btn.btn-lg {
   color: #fff;
@@ -2260,7 +2260,7 @@
   margin-top: clamp(60px, 5.857vw, 80px);
 }
 .comp_testimonials .section-cta-wrap a.btn {
-  color: #003453;
+  color: #1d4b67;
   font-weight: 700;
 }
 @media (hover: hover) and (pointer: fine) {
