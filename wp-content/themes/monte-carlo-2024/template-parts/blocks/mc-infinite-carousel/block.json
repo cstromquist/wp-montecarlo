@@ -1,0 +1,17 @@
+{
+    "name": "acf/mc-infinite-carousel",
+    "title": "MC Infinite Carousel",
+    "description": "Monte Carlo Infinite Carousel block for pages",
+    "category": "monte-carlo",
+    "icon": "align-full-width",
+    "style": "file:./style.css",
+    "apiVersion": 2,
+    "keywords": [
+        "carousel",
+        "slider"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    }
+}

@@ -19,6 +19,7 @@ function register_acf_blocks() {
 	register_block_type( __DIR__ . '/../template-parts/blocks/mc-logos/block.json' );
 	register_block_type( __DIR__ . '/../template-parts/blocks/mc-carousel/block.json' );
 	register_block_type( __DIR__ . '/../template-parts/blocks/mc-banner-cta/block.json' );
+	register_block_type( __DIR__ . '/../template-parts/blocks/mc-infinite-carousel/block.json' );
 }
 
 add_filter( 'block_categories_all', 'example_block_category', 10, 2);

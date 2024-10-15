@@ -4803,6 +4803,53 @@ IMPORTING COMPENENTS
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-952px);
+  }
+}
+.mc-slider {
+  background: white;
+  height: 136px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1200px;
+}
+.mc-slider::before, .mc-slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.mc-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.mc-slider::before {
+  left: 0;
+  top: 0;
+}
+.mc-slider .mc-slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 1904px;
+}
+.mc-slider .mc-slide {
+  height: 100px;
+  width: 136px;
+}
+.mc-slider .mc-slide img {
+  height: 100px;
+  width: auto;
+}
+
 /*********************
 TEMPLATE STYLES
 *********************/
