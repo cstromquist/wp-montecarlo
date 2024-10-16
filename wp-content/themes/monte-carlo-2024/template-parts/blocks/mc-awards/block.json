@@ -1,0 +1,16 @@
+{
+    "name": "acf/mc-awards",
+    "title": "MC Awards",
+    "description": "Monte Carlo Awards  block for pages",
+    "category": "monte-carlo",
+    "icon": "align-full-width",
+    "style": "file:./style.css",
+    "apiVersion": 2,
+    "keywords": [
+        "awards"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    }
+}

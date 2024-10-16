@@ -791,6 +791,10 @@ video {
   display: flex !important;
 }
 
+.grid {
+  display: grid !important;
+}
+
 .hidden {
   display: none !important;
 }
@@ -839,6 +843,10 @@ video {
   cursor: pointer !important;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
 .flex-row {
   flex-direction: row !important;
 }
@@ -875,6 +883,10 @@ video {
   gap: 0.5rem !important;
 }
 
+.gap-8 {
+  gap: 2rem !important;
+}
+
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0 !important;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse)) !important;
@@ -901,9 +913,19 @@ video {
   border-style: solid !important;
 }
 
+.border-\[\#cdd9e1\] {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(205 217 225 / var(--tw-border-opacity)) !important;
+}
+
 .border-secondary {
   --tw-border-opacity: 1 !important;
   border-color: rgb(237 166 0 / var(--tw-border-opacity)) !important;
+}
+
+.bg-\[\#f7f7f7\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-tertiary {
@@ -928,6 +950,10 @@ video {
 
 .to-\[\#005180\] {
   --tw-gradient-to: #005180 var(--tw-gradient-to-position) !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
 }
 
 .p-24 {
@@ -1076,6 +1102,10 @@ video {
 .text-white {
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+.underline {
+  text-decoration-line: underline !important;
 }
 
 .shadow-xl {
@@ -1233,6 +1263,22 @@ video {
     width: 20% !important;
   }
 
+  .md\:w-4\/12 {
+    width: 33.333333% !important;
+  }
+
+  .md\:w-8\/12 {
+    width: 66.666667% !important;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between !important;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem !important;
+  }
+
   .md\:pr-16 {
     padding-right: 4rem !important;
   }
@@ -1290,6 +1336,10 @@ video {
 
   .lg\:justify-center {
     justify-content: center !important;
+  }
+
+  .lg\:p-6 {
+    padding: 1.5rem !important;
   }
 
   .lg\:px-10 {

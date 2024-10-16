@@ -64,6 +64,7 @@ module.exports = {
     'text-lg',
     'mc-block-link',
     'min-h-[700px]',
+    'underline',
   ],
   plugins: [],
   module: {},
