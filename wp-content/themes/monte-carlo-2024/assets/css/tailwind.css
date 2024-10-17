@@ -5,7 +5,7 @@
 /**
  * Import block component styles
  */
-@import "../../template-parts/blocks/mc-carousel/style.css";
+@import "../../template-parts/blocks/mc-accordion/style.css";
 @import "../../template-parts/blocks/mc-banner-cta/style.css";
 
 @layer components {

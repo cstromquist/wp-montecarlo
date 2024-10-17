@@ -1,26 +1,31 @@
 <?php
 
 /**
- * MC Carousel Block template.
+ * @package MC Carousel Block
  *
- * @param array $block The block settings and attributes.
  */
-
-$carousel_items = !empty(get_field('carousel_items')) ? get_field('carousel_items') : '';
+$carousel_items         = !empty(get_field('carousel_items')) ? get_field('carousel_items') : '';
 ?>
-<div class="container mx-auto flex flex-col pb-0 mt-10 pt-8 block-carousel-block mc-carousel">
-  <div class="flex flex-row justify-between items-center inner-container">
-    <div class="flex flex-col w-full md:w-1/2 text-primary [&>div>p]:text-gray md:pr-16">
-      <?php foreach ($carousel_items as $i => $item) : ?>
-        <div class="flex flex-col carousel-item cursor-pointer relative <?php echo $i == 0 ? 'active' : ''; ?>" data-slide="<?php echo $i ?>">
-          <h4 class="text-2xl font-sans font-normal mb-2 mt-0 p-4"><?php echo esc_html($item['carousel_item_title']) ?></h4>
-          <p class="content text-lg px-4"><?php echo esc_html($item['carousel_item_text']) ?></p>
+<div class="container text-center">
+  <?php foreach ($carousel_items as $item) : ?>
+    <div class="flex flex-col justify-center gap-8 p-4">
+      <p class="text-xl text-gray mb-0 w-full md:w-[575px] mx-auto"><?php echo esc_html($item['text']); ?></p>
+      <!-- logo -->
+      <?php if ($item['logo']) : ?>
+        <div class="w-44 mx-auto">
+          <img src="<?php echo esc_url($item['logo']['url']); ?>" alt="<?php echo esc_attr($item['logo']['alt']); ?>" class="w-auto mx-auto" />
         </div>
-      <?php endforeach; ?>
+      <?php endif; ?>
+      <!-- subtext -->
+      <?php if ($item['subtext']) : ?>
+        <p class="text-sm text-gray w-full md:w-[500px] mx-auto"><?php echo esc_html($item['subtext']); ?></p>
+      <?php endif; ?>
+      <!-- link -->
+      <?php if ($item['link']) : ?>
+        <div>
+          <a class="font-serif text-primary border-b-secondary border-solid border-b-2" href="<?php echo esc_url($item['link']['url']); ?>" class="text-blue-500 hover:text-blue-700"><?php echo esc_html($item['link']['title']); ?></a>
+        </div>
+      <?php endif; ?>
     </div>
-    <div class="hidden md:block img flex flex-col w-1/2 relative transform-none">
-      <?php foreach ($carousel_items as $i => $item) : ?>
-        <img data-slide="<?php echo $i ?>" src="<?php echo esc_url($item['carousel_image']['url']) ?>" alt="<?php echo esc_attr($item['carousel_item_image']['alt']) ?>" class="w-full" />
-      <?php endforeach; ?>
-    </div>
-  </div>
+  <?php endforeach; ?>
+</div>

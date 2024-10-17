@@ -1,11 +1,11 @@
 {
-    "key": "group_67089110ab282",
-    "title": "MC Accordion",
+    "key": "group_671078a2363ef",
+    "title": "MC Carousel",
     "fields": [
         {
-            "key": "field_670891105f0ae",
-            "label": "Accordion Items",
-            "name": "accordion_items",
+            "key": "field_671078a2a16c6",
+            "label": "Carousel Items",
+            "name": "carousel_items",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -17,7 +17,7 @@
                 "id": ""
             },
             "acfe_save_meta": 0,
-            "acfe_repeater_stylised_button": 1,
+            "acfe_repeater_stylised_button": 0,
             "layout": "block",
             "pagination": 0,
             "min": 0,
@@ -27,8 +27,8 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6708ac3d46ebd",
-                    "label": "Item",
+                    "key": "field_671080302b47f",
+                    "label": "Carousel Item",
                     "name": "",
                     "aria-label": "",
                     "type": "accordion",
@@ -40,18 +40,17 @@
                         "class": "",
                         "id": ""
                     },
-                    "acfe_save_meta": 0,
                     "open": 0,
                     "multi_expand": 0,
                     "endpoint": 0,
-                    "parent_repeater": "field_670891105f0ae"
+                    "parent_repeater": "field_671078a2a16c6"
                 },
                 {
-                    "key": "field_6708adc3635dd",
-                    "label": "(Column 12\/12)",
-                    "name": "",
+                    "key": "field_671078b5a16c7",
+                    "label": "Text",
+                    "name": "text",
                     "aria-label": "",
-                    "type": "acfe_column",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -60,18 +59,19 @@
                         "class": "",
                         "id": ""
                     },
-                    "columns": "12\/12",
-                    "endpoint": 0,
-                    "border": "",
-                    "border_endpoint": [
-                        "endpoint"
-                    ],
-                    "parent_repeater": "field_670891105f0ae"
+                    "acfe_save_meta": 0,
+                    "default_value": "",
+                    "acfe_textarea_code": 0,
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_671078a2a16c6"
                 },
                 {
-                    "key": "field_6708ac8946ebe",
-                    "label": "Accordion image",
-                    "name": "accordion_image",
+                    "key": "field_671078d2a16c8",
+                    "label": "Logo",
+                    "name": "logo",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -96,34 +96,12 @@
                     "mime_types": "",
                     "preview_size": "medium",
                     "library": "all",
-                    "parent_repeater": "field_670891105f0ae"
+                    "parent_repeater": "field_671078a2a16c6"
                 },
                 {
-                    "key": "field_6708aed1feb6c",
-                    "label": "(Column 12\/12)",
-                    "name": "",
-                    "aria-label": "",
-                    "type": "acfe_column",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "columns": "12\/12",
-                    "endpoint": 0,
-                    "border": "",
-                    "border_endpoint": [
-                        "endpoint"
-                    ],
-                    "parent_repeater": "field_670891105f0ae"
-                },
-                {
-                    "key": "field_6708acd546ebf",
-                    "label": "Accordion item title",
-                    "name": "accordion_item_title",
+                    "key": "field_671078e2a16c9",
+                    "label": "Subtext",
+                    "name": "subtext",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -140,14 +118,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_670891105f0ae"
+                    "parent_repeater": "field_671078a2a16c6"
                 },
                 {
-                    "key": "field_6708ace846ec0",
-                    "label": "Accordion item text",
-                    "name": "accordion_item_text",
+                    "key": "field_671078f3a16ca",
+                    "label": "Link",
+                    "name": "link",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "acfe_advanced_link",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -157,36 +135,9 @@
                         "id": ""
                     },
                     "acfe_save_meta": 0,
-                    "default_value": "",
-                    "acfe_textarea_code": 0,
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_670891105f0ae"
-                },
-                {
-                    "key": "field_6708ade2635de",
-                    "label": "(Column Endpoint)",
-                    "name": "",
-                    "aria-label": "",
-                    "type": "acfe_column",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "acfe_save_meta": 0,
-                    "endpoint": 1,
-                    "border_endpoint": [
-                        "endpoint"
-                    ],
-                    "columns": "6\/12",
-                    "border": "",
-                    "parent_repeater": "field_670891105f0ae"
+                    "post_type": "",
+                    "taxonomy": "",
+                    "parent_repeater": "field_671078a2a16c6"
                 }
             ]
         }
@@ -196,7 +147,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/mc-accordion"
+                "value": "acf\/mc-carousel"
             }
         ]
     ],
@@ -216,7 +167,7 @@
     "acfe_display_title": "",
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1729131853,
+    "modified": 1729134714,
     "acfe_categories": {
         "block-item": "Block"
     }

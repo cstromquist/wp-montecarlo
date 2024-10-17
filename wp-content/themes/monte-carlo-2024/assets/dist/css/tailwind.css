@@ -584,14 +584,14 @@ video {
   }
 }
 
-.mc-carousel .carousel-item.active {
+.mc-accordion .carousel-item.active {
   border: 1px solid #eda600;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.mc-carousel .carousel-item.active .content {
+.mc-accordion .carousel-item.active .content {
   height: auto;
 }
 
@@ -729,6 +729,10 @@ video {
   margin: 0px !important;
 }
 
+.m-6 {
+  margin: 1.5rem !important;
+}
+
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -787,6 +791,14 @@ video {
   display: block !important;
 }
 
+.inline-block {
+  display: inline-block !important;
+}
+
+.inline {
+  display: inline !important;
+}
+
 .flex {
   display: flex !important;
 }
@@ -805,6 +817,10 @@ video {
 
 .h-auto {
   height: auto !important;
+}
+
+.h-20 {
+  height: 5rem !important;
 }
 
 .min-h-\[700px\] {
@@ -833,6 +849,22 @@ video {
 
 .w-full {
   width: 100% !important;
+}
+
+.w-52 {
+  width: 13rem !important;
+}
+
+.w-\[400px\] {
+  width: 400px !important;
+}
+
+.w-48 {
+  width: 12rem !important;
+}
+
+.w-44 {
+  width: 11rem !important;
 }
 
 .transform-none {
@@ -887,6 +919,14 @@ video {
   gap: 2rem !important;
 }
 
+.gap-4 {
+  gap: 1rem !important;
+}
+
+.gap-12 {
+  gap: 3rem !important;
+}
+
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0 !important;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse)) !important;
@@ -909,6 +949,15 @@ video {
   border-width: 1px !important;
 }
 
+.border-y-2 {
+  border-top-width: 2px !important;
+  border-bottom-width: 2px !important;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px !important;
+}
+
 .border-solid {
   border-style: solid !important;
 }
@@ -921,6 +970,16 @@ video {
 .border-secondary {
   --tw-border-opacity: 1 !important;
   border-color: rgb(237 166 0 / var(--tw-border-opacity)) !important;
+}
+
+.border-b-primary {
+  --tw-border-opacity: 1 !important;
+  border-bottom-color: rgb(29 75 103 / var(--tw-border-opacity)) !important;
+}
+
+.border-b-secondary {
+  --tw-border-opacity: 1 !important;
+  border-bottom-color: rgb(237 166 0 / var(--tw-border-opacity)) !important;
 }
 
 .bg-\[\#f7f7f7\] {
@@ -1076,8 +1135,22 @@ video {
   line-height: 1rem !important;
 }
 
+.text-sm {
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+}
+
+.text-xl {
+  font-size: 1.25rem !important;
+  line-height: 1.75rem !important;
+}
+
 .font-normal {
   font-weight: 400 !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
 }
 
 .italic {
@@ -1108,6 +1181,22 @@ video {
   text-decoration-line: underline !important;
 }
 
+.decoration-primary {
+  text-decoration-color: #1d4b67 !important;
+}
+
+.decoration-secondary {
+  text-decoration-color: #eda600 !important;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px !important;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px !important;
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color) !important;
@@ -1118,7 +1207,7 @@ video {
  * Import block component styles
  */
 
-.mc-carousel .carousel-item:after {
+.mc-accordion .carousel-item:after {
   content: "";
   position: absolute;
   right: 16px;
@@ -1133,7 +1222,7 @@ video {
   transform-origin: 50% 20%;
 }
 
-.mc-carousel .carousel-item.active:after {
+.mc-accordion .carousel-item.active:after {
   transform: rotate(180deg);
 }
 
@@ -1271,6 +1360,26 @@ video {
     width: 66.666667% !important;
   }
 
+  .md\:w-\[400px\] {
+    width: 400px !important;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px !important;
+  }
+
+  .md\:w-\[600px\] {
+    width: 600px !important;
+  }
+
+  .md\:w-\[550px\] {
+    width: 550px !important;
+  }
+
+  .md\:w-\[575px\] {
+    width: 575px !important;
+  }
+
   .md\:justify-between {
     justify-content: space-between !important;
   }
@@ -1308,6 +1417,10 @@ video {
 
   .lg\:w-7\/12 {
     width: 58.333333% !important;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px !important;
   }
 
   .lg\:max-w-\[450px\] {
