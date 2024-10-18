@@ -9,6 +9,17 @@
 }
 
 
+.mc-pinned-nav {
+  position: fixed;
+  top: -166px;
+  /* animate the transition when top position changes */
+  transition: top 0.3s ease;
+}
+.mc-pinned-nav.scrolled {
+  top: 0;
+  display: block;
+}
+
 @charset "UTF-8";
 /******************************************************************
 Site Name: TB Starter

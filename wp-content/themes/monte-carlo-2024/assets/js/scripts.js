@@ -13,6 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 import { headerNavComp } from './modules/comp-header-nav';
 import { carouselBlock } from './blocks/carousel';
 import McCarousel from './blocks/mc-carousel';
+import McPinnedNav from './blocks/mc-pinned-nav';
 //import { heroBlock } from './blocks/hero';
 import { logoLayoutComp } from "./modules/comp-logo-layout";
 
@@ -97,6 +98,7 @@ import { webinarsPage } from "./pages/webinars";
     carouselBlock(gsap);
     logoLayoutComp(gsap);
     McCarousel();
+    McPinnedNav();
     
     if ($('body.blog').length || $('body.category').length || $('body.search').length) blogPage(Swiper, Navigation,);
     if ($('.post-type-archive-events').length) eventsPage(Isotope);

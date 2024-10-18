@@ -1,0 +1,17 @@
+{
+    "name": "acf/mc-pinned-nav",
+    "title": "MC Pinned Nav",
+    "description": "Monte Carlo Pinned Nav block for pages",
+    "category": "monte-carlo",
+    "icon": "align-full-width",
+    "style": "file:./style.css",
+    "apiVersion": 2,
+    "keywords": [
+        "pinned nav",
+        "navigation"
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "render.php"
+    }
+}
