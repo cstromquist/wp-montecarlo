@@ -3,6 +3,7 @@
 /**
  * MC accordion Block template.
  *
+ * NOTE: This package leverages the carousel.js library at assets/js/blocks/carousel.js
  * @param array $block The block settings and attributes.
  */
 
@@ -15,6 +16,9 @@ $accordion_items = !empty(get_field('accordion_items')) ? get_field('accordion_i
         <div class="flex flex-col carousel-item cursor-pointer relative <?php echo $i == 0 ? 'active' : ''; ?>" data-slide="<?php echo $i ?>">
           <h4 class="text-2xl font-sans font-normal mb-2 mt-0 p-4"><?php echo esc_html($item['accordion_item_title']) ?></h4>
           <p class="content text-lg px-4"><?php echo esc_html($item['accordion_item_text']) ?></p>
+          <p class="block md:hidden">
+            <img data-slide="<?php echo $i ?>" src="<?php echo esc_url($item['accordion_image']['url']) ?>" alt="<?php echo esc_attr($item['accordion_item_image']['alt']) ?>" class="w-full" />
+          </p>
         </div>
       <?php endforeach; ?>
     </div>

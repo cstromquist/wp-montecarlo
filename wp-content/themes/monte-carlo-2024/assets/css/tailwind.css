@@ -19,9 +19,23 @@
     @apply text-lg underline relative text-primary hover:text-secondary cursor-pointer tracking-tight font-serif;
     &:after {
       @apply content-[''] block w-full h-[9px] w-[5px] absolute -right-3 bottom-1.5;
-      content: '';
+      content: "";
       background: url("../../img/caret-right-primary.png") no-repeat center;
     }
+  }
+  .mc-carousel .carousel-container {
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  .mc-carousel button {
+    color: transparent;
+  }
+  .mc-carousel .slide-arrow-prev {
+    background: url("../../img/carousel_arrow_prev.png") no-repeat center;
+  }
+  .mc-carousel .slide-arrow-next {
+    background: url("../../img/carousel_arrow_next.png") no-repeat center;
   }
 }
 

@@ -58,32 +58,6 @@
 
     <?php endwhile; endif; ?>
 
-    <?php
-    $hide_default_related_section = get_field('hide_the_default_page_resources_section');
-
-    global $post;
-    if ( !is_page( array( 'about-us', 'careers-at-monte-carlo' ) ) && !$hide_default_related_section ) {
-        $checkField = get_field( 'page_related_resources_comp_related_resources', $post->ID );
-        $checkForTitle = '';
-        if (!is_null($checkField)) {
-            $checkForTitle = $checkField['related_resource_1']['related_resource_title'];
-        }
-        if (!empty($checkForTitle)) :
-            if ( have_rows( 'page_related_resources_comp_related_resources', $post->ID ) ) :
-                while ( have_rows( 'page_related_resources_comp_related_resources', $post->ID ) ) : the_row();
-                    include( locate_template( 'template-parts/components/related-resources.php', false, false ) );
-                endwhile;
-            endif;
-        else :
-            if ( have_rows( 'home_related_resources_comp_related_resources', get_option( 'page_on_front' ) ) ) :
-                while ( have_rows( 'home_related_resources_comp_related_resources', get_option( 'page_on_front' ) ) ) : the_row();
-                    include( locate_template( 'template-parts/components/related-resources.php', false, false ) );
-                endwhile;
-            endif;
-        endif;
-    }
-    ?>
-
   </main>
 
 <?php get_footer(); ?>

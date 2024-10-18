@@ -14,15 +14,13 @@
   content: "";
   position: absolute;
   right: 16px;
-  width: 0;
-  height: 0;
-  border-top: 6px solid #003453;
-  border-right: 4px solid rgba(0, 0, 0, 0);
-  border-left: 4px solid rgba(0, 0, 0, 0);
+  width: 14px;
+  height: 8px;
   top: 30px;
   transform: translateY(-20%);
   transition: all 0.3s ease;
   transform-origin: 50% 20%;
+  background: url("../../img/caret-down.png") no-repeat center;
 }
 
 .mc-accordion .carousel-item.active:after {
