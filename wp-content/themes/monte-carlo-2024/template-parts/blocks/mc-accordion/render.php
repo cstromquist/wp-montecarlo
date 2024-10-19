@@ -13,9 +13,9 @@ $accordion_items = !empty(get_field('accordion_items')) ? get_field('accordion_i
   <div class="flex flex-row justify-between items-center inner-container">
     <div class="flex flex-col w-full md:w-1/2 text-primary [&>div>p]:text-gray md:pr-16">
       <?php foreach ($accordion_items as $i => $item) : ?>
-        <div class="flex flex-col carousel-item cursor-pointer relative <?php echo $i == 0 ? 'active' : ''; ?>" data-slide="<?php echo $i ?>">
-          <h4 class="text-2xl font-sans font-normal mb-2 mt-0 p-4"><?php echo esc_html($item['accordion_item_title']) ?></h4>
-          <p class="content text-lg px-4"><?php echo esc_html($item['accordion_item_text']) ?></p>
+        <div class="flex flex-col carousel-item cursor-pointer px-4 md:px-0 relative <?php echo $i == 0 ? 'active' : ''; ?>" data-slide="<?php echo $i ?>">
+          <h4 class="text-2xl font-sans font-normal md:p-4 mb-2 mt-0"><?php echo esc_html($item['accordion_item_title']) ?></h4>
+          <p class="content text-lg md:px-4 mb-2"><?php echo esc_html($item['accordion_item_text']) ?></p>
           <p class="block md:hidden">
             <img data-slide="<?php echo $i ?>" src="<?php echo esc_url($item['accordion_image']['url']) ?>" alt="<?php echo esc_attr($item['accordion_item_image']['alt']) ?>" class="w-full" />
           </p>

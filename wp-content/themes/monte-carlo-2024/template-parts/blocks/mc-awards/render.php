@@ -6,8 +6,8 @@
 $main_image           = !empty(get_field('main_image')) ? get_field('main_image') : '';
 $images               = !empty(get_field('images')) ? get_field('images') : '';
 ?>
-<div class="container flex flex-row justify-between md:gap-12 border border-solid border-secondary rounded-lg p-8 bg-[#f7f7f7]">
-  <div class="md:w-4/12">
+<div class="container flex flex-col md:flex-row justify-between md:gap-12 border border-solid border-secondary rounded-lg p-8 bg-[#f7f7f7]">
+  <div class="md:w-4/12 mb-4 md:mb-0">
     <?php if ($main_image) : ?>
       <img src="<?php echo esc_url($main_image['url']) ?>" alt="<?php echo esc_attr($main_image['alt']) ?>" class="w-full" />
     <?php endif; ?>
