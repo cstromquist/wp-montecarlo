@@ -9,6 +9,9 @@
 @import "../../template-parts/blocks/mc-banner-cta/style.css";
 
 @layer components {
+  .mc-btn-secondary {
+    @apply text-xs sm:text-sm md:text-xl font-serif border-secondary border border-solid px-10 py-2 text-white hover:text-secondary rounded-full;
+  }
   .mc-btn-primary {
     @apply text-xs sm:text-sm md:text-xl font-serif bg-secondary px-8 py-2 rounded-full text-primary hover:text-white;
     &:hover {
