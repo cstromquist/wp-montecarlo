@@ -11,7 +11,7 @@
       <a href="#" data-lookbook-overlay-href="https://resources.montecarlodata.com/data-observability-product-tour" class="mc-btn-secondary text-xs sm:text-sm md:text-lg text-primary hover:underline px-2 sm:px-4 border-primary">Take a product tour</a>
     </div>
     <div class="bg-blue-500">
-      <a href="#" data-lookbook-overlay-href="https://resources.montecarlodata.com/data-observability-product-tour" class="mc-btn-primary text-xs sm:text-sm md:text-lg px-6 hover:underline">Request a demo</a>
+      <a href="/request-a-demo/" class="mc-btn-primary text-xs sm:text-sm md:text-lg px-6 hover:underline">Request a demo</a>
     </div>
   </div>
 </div>

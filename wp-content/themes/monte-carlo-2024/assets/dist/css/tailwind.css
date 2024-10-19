@@ -1470,6 +1470,10 @@ video {
     margin-left: -275px !important;
   }
 
+  .sm\:block {
+    display: block !important;
+  }
+
   .sm\:w-1\/4 {
     width: 25% !important;
   }
