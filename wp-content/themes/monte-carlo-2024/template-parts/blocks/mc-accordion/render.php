@@ -9,7 +9,7 @@
 
 $accordion_items = !empty(get_field('accordion_items')) ? get_field('accordion_items') : '';
 ?>
-<div class="container mx-auto flex flex-col pb-0 mt-10 pt-8 block-carousel-block mc-accordion">
+<div class="container mx-auto flex flex-col pb-0 pt-8 block-carousel-block mc-accordion">
   <div class="flex flex-row justify-between items-center inner-container">
     <div class="flex flex-col w-full md:w-1/2 text-primary [&>div>p]:text-gray md:pr-16">
       <?php foreach ($accordion_items as $i => $item) : ?>

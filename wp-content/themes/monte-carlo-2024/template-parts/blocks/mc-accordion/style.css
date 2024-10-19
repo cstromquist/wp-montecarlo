@@ -1,9 +1,11 @@
 @layer components {
   .mc-accordion .carousel-item.active {
-    border: 1px solid theme('colors.secondary');
-    border-radius: 4px;
-    background: theme('colors.white');
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    @media (min-width: 768px) {
+      border: 1px solid theme("colors.secondary");
+      border-radius: 4px;
+      background: theme("colors.white");
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
   }
   .mc-accordion .carousel-item.active .content {
     height: auto;
@@ -11,6 +13,7 @@
 }
 
 .mc-accordion .carousel-item:after {
+  @apply hidden md:block;
   content: "";
   position: absolute;
   right: 16px;

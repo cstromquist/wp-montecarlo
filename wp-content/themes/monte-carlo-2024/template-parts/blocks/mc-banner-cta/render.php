@@ -11,7 +11,7 @@ $cta_button         = !empty(get_field('cta_button')) ? get_field('cta_button') 
 $image_left         = !empty(get_field('image_left')) ? get_field('image_left') : '';
 $image_right        = !empty(get_field('image_right')) ? get_field('image_right') : '';
 ?>
-<div class="relative p-24 bg-tertiary text-white flex flex-col align-middle justify-center">
+<div class="relative p-10 md:p-24 bg-tertiary text-white flex flex-col align-middle justify-center">
   <h2 class="text-4xl mb-2 mt-0 text-center lg:max-w-[450px] mx-auto mb-8"><?php echo esc_html($heading) ?></h2>
   <p class="relative text-lg text-center lg:max-w-[550px] mx-auto mc-quote">
     <?php echo esc_html($subtext) ?>
